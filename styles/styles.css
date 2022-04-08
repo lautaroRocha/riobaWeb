@@ -35,11 +35,21 @@
     color: #fff !important;
     font-weight: 800;
 }
-@media (max-width: 1045px){
+@media (max-width: 990px){
    .nav-link {
-    font-size: .8em;
+    font-size: .9em;
    }
 }
+@media (max-width: 850px){
+    .nav-link{
+     font-size: .8em;
+    }
+ }
+ @media (max-width: 800px){
+    .nav-link{
+     font-size: .6em;
+    }
+ }
 .nav-link:hover{
     color: #BFE028 !important;
 }
@@ -183,9 +193,12 @@ ul {
     align-content: center;
     gap: 5em;
 }
-.ig, .fb {
-    height: 2.5em;
+.bi {
+    height: 2em;
     width: auto;
+}
+.bi:hover {
+    color: #BFE028;
 }
 /* ESTILOS DE Q.S.*/
 .wrapQS {
@@ -215,7 +228,7 @@ ul {
 .reverse {
     flex-direction: row-reverse;
 }
-/*ESTILOS DE COLAB*/
+/*ESTILOS DE COLAB
 .gridColab {
     display: grid;
     grid-template-columns: 1fr 1fr;
