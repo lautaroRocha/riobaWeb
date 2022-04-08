@@ -16,39 +16,40 @@
     background-repeat: round;  
     background-image: url(../images/trbien.png);
 }
-/*---->HEADER*/
-header {
-    display: flex;
+/*---->HEADER */
+.header {
     background-color: rgba(0,0,0,.6);
     width: 100%;
-    height: 20vh;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10vh;
-
 }
 .logo {
     display: flex;
     width: 45vh;
-    height: auto;  
-}   
- .nave {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    gap: 2rem;
-    font-size: .9rem;
- }
-.nave a {
-    color: #fff;
-    text-decoration: none;
+    height: auto; 
+    padding-left: 5%; 
+}  
+.navbar {
+    background-color: rgba(0,0,0,.6);
+}
+.nav-link{
     text-transform: uppercase;
+    color: #fff !important;
     font-weight: 800;
 }
-.nave a:hover{
-    color: #BFE028;
+@media (max-width: 1045px){
+   .nav-link {
+    font-size: .8em;
+   }
 }
+.nav-link:hover{
+    color: #BFE028 !important;
+}
+.navbar-toggler{
+    background-color: rgba(255, 255, 255, .5);
+} 
+ul {
+    margin-right: 5%;
+}
+
 /*-----> MAIN */
 .wrap {
     background-color: rgba(0,0,0,.4);
@@ -189,13 +190,13 @@ header {
 /* ESTILOS DE Q.S.*/
 .wrapQS {
     background-color: rgba(0,0,0,.4);
-    margin:10vh auto;
+    margin:10vh 10%;
     padding: 5vh;
     border-radius: 3%;
     display: flex;
     height: 65vh;
     justify-content: space-evenly;
-    width:90vw;
+    width:fit-content;
     gap:1em;
 }
 .textoQS {
@@ -387,21 +388,21 @@ header {
 /*MEDIAQUERRY */
 @media (max-width: 900px) {
     /*MEDIAQUERRY MAIN*/ 
-    .nave li {
+    /*.nave li {
         text-align: center;
     }
     header {
         flex-direction: column;
         height: 35vh;
         justify-content: space-around;
-    }
+       
+        }
+     .nave li{
+            margin-top: 5vh;
+            font-size: .9rem}*/
     .logo {
         height: 15vh;
         width: auto;  
-    }
-    .nave li{
-        margin-top: 5vh;
-        font-size: .9rem
     }
     .wrap {
         height: auto;
@@ -439,6 +440,7 @@ header {
     grid-area: 10/4/12/6;
     height: 100%; 
     width: auto;}
+    
     .wrapQS {
         flex-direction: column-reverse;
         height: auto;
@@ -464,7 +466,7 @@ header {
     }
     .wrapItem {
         width: 90%;
-        height: 40%;
+        height: 30%;
     }
     .pie {
         padding-top: 15em;

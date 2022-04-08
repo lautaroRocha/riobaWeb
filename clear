@@ -1,0 +1,23 @@
+* [33mcommit 3973b8350767d2fedde157b5cf9432ecbeca38c0[m[33m ([m[1;36mHEAD -> [m[1;32majustes[m[33m, [m[1;31morigin/ajustes[m[33m)[m
+[31m|[m Author: Lautaro Rocha <lautarovrocha@gmail.com>
+[31m|[m Date:   Thu Apr 7 13:38:28 2022 -0300
+[31m|[m 
+[31m|[m     ajuste los margin de los wrapsColab
+[31m|[m 
+* [33mcommit a1e885b48a06b63ce0ef551f836e0d3e34df6ecc[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/animaciones[m[33m, [m[1;32mmaster[m[33m, [m[1;32manimaciones[m[33m)[m
+[31m|[m Author: Lautaro Rocha <lautarovrocha@gmail.com>
+[31m|[m Date:   Thu Apr 7 13:11:38 2022 -0300
+[31m|[m 
+[31m|[m     eliminé líneas de código inservibles
+[31m|[m 
+* [33mcommit 03c04961fab673e44386d01cf106faa93e9224da[m
+[31m|[m Author: Lautaro Rocha <lautarovrocha@gmail.com>
+[31m|[m Date:   Thu Apr 7 12:10:44 2022 -0300
+[31m|[m 
+[31m|[m     añadí animaciones a los elementos de colab
+[31m|[m 
+* [33mcommit 6b8928d00f70925a6e7e5cb0b10190bc66631b1f[m[33m ([m[1;31morigin/gh-pages[m[33m)[m
+  Author: Lautaro Rocha <lautarovrocha@gmail.com>
+  Date:   Tue Apr 5 19:44:50 2022 -0300
+  
+      añado los archivos del proyecto
