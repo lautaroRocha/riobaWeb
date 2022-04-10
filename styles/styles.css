@@ -212,6 +212,17 @@
     height: auto;
     overflow: hidden;
 }
+.bg-light{
+    background-color: rgba(255, 255, 255, .6) !important;
+}
+.bg-dark{
+    background-color: rgba(0,0,0,.6) !important;
+}
+.rounded {
+    border-radius: 3% !important;
+}
+
+/*ESTILOS DE CONTACTO*/
 .wrapContac {
     background-color: rgba(0,0,0,.4);
     padding: 5vh;
