@@ -225,6 +225,12 @@
 .warning {
     color: #BFE028;
 }
+
+.container p a:hover {
+    color:#BFE028;
+    text-shadow:#fff 2px 2px 5px;
+
+}
 /*ESTILOS DE CONTACTO*/
 .wrapContac {
     background-color: rgba(0,0,0,.4);
@@ -270,9 +276,14 @@
     font-size: 2em;
     padding: 7em 0em;
 }
-.sombraTenue {
-    text-shadow:#BFE028 2px 2px 5px
+.display-7 {
+    font-size: 8vh;    
 }
+
+.sombraTenue {
+    text-shadow:#BFE028 2px 2px 5px;
+}
+
 .modDisItem {
     width: 80%;
     height: auto;
