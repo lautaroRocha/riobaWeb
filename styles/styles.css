@@ -22,10 +22,8 @@
     width: 100%;
 }
 .logo {
-    display: flex;
     width: 45vh;
     height: auto; 
-    padding-left: 5%; 
 }  
 .navbar {
     background-color: rgba(0,0,0,.6);
@@ -34,21 +32,22 @@
     text-transform: uppercase;
     color: #fff !important;
     font-weight: 800;
+    font-size: 1.2vw;
 }
-@media (max-width: 1045px){
-   .nav-link {
-    font-size: .8em;
-   }
+@media (max-width: 768px){
+    .nav-link {
+        font-size: 15px;
+    }
 }
+
 .nav-link:hover{
     color: #BFE028 !important;
 }
 .navbar-toggler{
     background-color: rgba(255, 255, 255, .5);
+    font-size: 1em;
 } 
-ul {
-    margin-right: 5%;
-}
+
 
 /*-----> MAIN */
 .wrap {
@@ -108,7 +107,7 @@ ul {
                           "buzo buzo chomba chomba atras atras cream cream"
                           "buzo buzo chomba chomba atras atras cream cream"
                           "buzo buzo chomba chomba atras atras cream cream"
-                          "buzo buzo chomba chomba bolso bolso cream cream"
+                          "buzo buzo chomba chomba atras atras cream cream"
                           "buzo buzo chomba chomba bolso bolso cream cream"
                           "buzo buzo chomba chomba bolso bolso cream cream"
                           "patch patch patch patch bolso bolso cream cream";
@@ -159,14 +158,7 @@ ul {
 .pie {
     background-color: #000;
     color: #ABAD9A;
-    text-align: center;
     bottom:0;
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding: 5vh;
     gap: 1em;
 }
 .pie a {
@@ -177,15 +169,13 @@ ul {
 .pie a:hover{
     color: #BFE028;
 }
-.pieIconos {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 5em;
-}
-.ig, .fb {
-    height: 2.5em;
+
+.bi {
+    height: 2em;
     width: auto;
+}
+.bi:hover {
+    color: #BFE028;
 }
 /* ESTILOS DE Q.S.*/
 .wrapQS {
@@ -215,122 +205,26 @@ ul {
 .reverse {
     flex-direction: row-reverse;
 }
-/*ESTILOS DE COLAB*/
-.gridColab {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items:center;
-}
-.wrapColab {
-    background-color: rgba(0,0,0,.4);
-    margin:5vh 10vh;
-    padding: 5vh;
-    border-radius: 3%;
-    height: auto;
-    width: fit-content;
-}
-.wrapColab img {
-    border-radius: 15px;
-}
-.gridMero {
-    display: grid; 
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: "texto dePie"
-                        "juntos dePie"
-                        "juntos dePie"
-                        "juntos dePie";
-    gap: 2rem;
-    height: 100%;
-    align-items: center;
-  }
-    #dePie { 
-        grid-area: dePie; 
-        width: 100%;
-        height: 80%;
-    }
-    #juntos { 
-        grid-area: juntos; 
-        width: 100%;
-        height: 100%;
-    }
-    #textoMero { 
-        grid-area: texto; 
-        font-size: 3em;
-        font-weight: 800;
-        text-align: left;
-    }   
-.gridMalan {
-        display: grid; 
-        grid-template-areas: 
-          "titulo titulo "
-          "outfit juntos"
-          "outfit  juntos"
-          "outfit  juntos"
-          "outfit juntos"
-          "outfit  juntos"
-         ; 
-         gap: 2em;
-        }
-    #textoMalan { 
-          grid-area: titulo; 
-          font-size: 3em;
-          font-weight: 800;
-          text-align: center;
-        }
-    #outfitMalan {
-        grid-area: outfit; 
-        width: 100%;
-        height: 100%; 
-        }
-    #juntosMalan { 
-        grid-area: juntos; 
-        width: 100%;
-        height: 100%;
-        }    
 
-.wrapColab video {
-    height: 100vh;
-    width: auto;
-    margin-right: auto;
-}
-.wrapPequeño {
-    background-color: rgba(0,0,0,.4);
-    margin:10vh 5vh;
-    padding: 5vh;
-    border-radius: 3%;
+/*ESTILOS DE COLAB*/
+.carousel {
+    width: 400px;
     height: auto;
-    width: 50vh;
-    display: flex;                                
-    justify-content: space-around;  
-    align-items: center;  
-    text-align: center;
+    overflow: hidden;
 }
-.wrapPequeño a {
-        text-decoration: none;
-        color: #FFF;
-        font-weight: 900;       
+.bg-light{
+    background-color: rgba(255, 255, 255, .4) !important;
 }
-.wrapBorder {
-    background-color: rgba(0,0,0,.4);
-    margin:5vh 15%;
-    padding: 5vh;
-    border-radius: 3%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10VH;
-    width: 70%;
-    justify-content: center;
-    justify-self: center;
+.bg-dark{
+    background-color: rgba(0,0,0,.4) !important;
 }
-.wrapBorder img {
-   filter: blur(5px);
+.rounded {
+    border-radius: 3% !important;
 }
-.wrapBorder img:hover {
-    filter: none;
-    transform: scale(1.5);
-    z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
-/*ESTILOS CONTACTO*/
+.warning {
+    color: #BFE028;
+}
+/*ESTILOS DE CONTACTO*/
 .wrapContac {
     background-color: rgba(0,0,0,.4);
     padding: 5vh;
@@ -387,23 +281,6 @@ ul {
 }
 /*MEDIAQUERRY */
 @media (max-width: 900px) {
-    /*MEDIAQUERRY MAIN*/ 
-    /*.nave li {
-        text-align: center;
-    }
-    header {
-        flex-direction: column;
-        height: 35vh;
-        justify-content: space-around;
-       
-        }
-     .nave li{
-            margin-top: 5vh;
-            font-size: .9rem}*/
-    .logo {
-        height: 15vh;
-        width: auto;  
-    }
     .wrap {
         height: auto;
         margin-left: 2em;
