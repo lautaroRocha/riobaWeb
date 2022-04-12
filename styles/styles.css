@@ -17,10 +17,6 @@
     background-image: url(../images/trbien.png);
 }
 /*---->HEADER */
-.header {
-    background-color: rgba(0,0,0,.6);
-    width: 100%;
-}
 .logo {
     width: 45vh;
     height: auto; 
@@ -39,7 +35,6 @@
         font-size: 15px;
     }
 }
-
 .nav-link:hover{
     color: #BFE028 !important;
 }
@@ -47,8 +42,6 @@
     background-color: rgba(255, 255, 255, .5);
     font-size: 1em;
 } 
-
-
 /*-----> MAIN */
 .wrap {
     background-color: rgba(0,0,0,.4);
@@ -74,27 +67,6 @@
     text-shadow:#BFE028 2px 2px 
 }.sombraInvertida {
     text-shadow:#BFE028 2px -2px 
-}
-.titulo {
-    background-color: rgba(0,0,0,.4);
-    padding: 5vh;
-    border-radius: 3%;
-    width: 50%;
-    text-transform: uppercase;
-    color: #FFF;
-    margin: 10vh 25%;
-    text-align: center;
-    font-weight: 600;
-    max-height: 250px;
-}
-.titulo a{
-    color: #BFE028;
-    text-decoration: none;
-    font-weight: 900;  
-    margin: 0 .5em; 
-}
-.wrapItem {
-    border-radius: 3%;
 }
 /*------>INDEX*/
 .gridIndex {
@@ -177,8 +149,14 @@
 .bi:hover {
     color: #BFE028;
 }
-/* ESTILOS DE Q.S.*/
-.wrapQS {
+
+/*ESTILOS DE COLAB*/
+.carousel {
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+}
+.wrapCaru {
     background-color: rgba(0,0,0,.4);
     margin:10vh 10%;
     padding: 5vh;
@@ -189,30 +167,6 @@
     width:fit-content;
     gap:1em;
 }
-.textoQS {
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1.5em;
-    color: #FFF;
-    font-weight: bold;
-    font-size: 2.5vh;
-    margin-top: 20%;
-}
-.QSItem {
-    width: 60%;
-    height: auto;
-}
-.reverse {
-    flex-direction: row-reverse;
-}
-
-/*ESTILOS DE COLAB*/
-.carousel {
-    width: 400px;
-    height: auto;
-    overflow: hidden;
-}
-
 .bg-light{
     background-color: rgba(255, 255, 255, .4) !important;
 }
@@ -225,69 +179,21 @@
 .warning {
     color: #BFE028;
 }
-
 .container p a:hover {
     color:#BFE028;
     text-shadow:#fff 2px 2px 10px;
-
 }
 /*ESTILOS DE CONTACTO*/
-.wrapContac {
-    background-color: rgba(0,0,0,.4);
-    padding: 5vh;
-    border-radius: 3%;
-    width: fit-content;
-    text-transform: uppercase;
-    line-height: 5vh;
-    color: #FFF;
-    margin: 10vh auto;
-    text-align: center;
-}
-.wrapContac fieldset {
-    padding: 3vh;
-}
-.wrapFooter{
-    display: flex;
-}
 .display-8 {
     font-size: 32w;
-
 }
 /*MODELOS DISPONIBLES*/
-.modDisGrid {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.wrapModDis {
-    background-color: rgba(0,0,0,.4);
-    margin:10vh 5vh;
-    padding: 5vh;
-    border-radius: 3%;
-    display: flex;
-    flex-direction: column;
-    gap:.5em;
-    height: 65vh;
-    justify-content: space-evenly;
-    width: auto;
-}
-.textoModDis {
-    text-transform: uppercase;
-    color: #FFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight:900;
-    font-size: 2em;
-    padding: 7em 0em;
-}
 .display-7 {
     font-size: 4vw;    
 }
-
 .sombraTenue {
     text-shadow:#BFE028 2px 2px 5px;
 }
-
 .modDisItem {
     width: 80%;
     height: auto;
@@ -334,53 +240,14 @@
     height: 100%; 
     width: auto;}
     
-    .wrapQS {
+    .wrapCaru {
         flex-direction: column-reverse;
         height: auto;
         align-items: center;
         gap: 2em;
     }  
-    .wrapColab {
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-        gap:2em;
-        margin: 10vh auto;
-    }  
-    .wrapPequeño {
-        width: 100%;
-    }
-    .titulo {
-        width: 100%;
-        margin: 10vh 0%;
-    }
-    .textoQS {
-      margin: 0%;
-    }
-    .wrapItem {
-        width: 90%;
-        height: 30%;
-    }
     .pie {
         padding-top: 15em;
-    }
-    .gridMero, .gridMalan {
-        display: flex;
-        flex-direction: column;
-     }
-    .modDisGrid {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-    .wrapModDis {
-        max-width:500px;
-    }
-    .modDisItem {
-        max-height: 300px;
-        max-width: 300px;
-    }
-    .gridColab {
-        display: block;
     }
 }     
 
