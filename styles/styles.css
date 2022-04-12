@@ -228,7 +228,7 @@
 
 .container p a:hover {
     color:#BFE028;
-    text-shadow:#fff 2px 2px 5px;
+    text-shadow:#fff 2px 2px 10px;
 
 }
 /*ESTILOS DE CONTACTO*/
@@ -248,6 +248,10 @@
 }
 .wrapFooter{
     display: flex;
+}
+.display-8 {
+    font-size: 32w;
+
 }
 /*MODELOS DISPONIBLES*/
 .modDisGrid {
@@ -277,7 +281,7 @@
     padding: 7em 0em;
 }
 .display-7 {
-    font-size: 8vh;    
+    font-size: 4vw;    
 }
 
 .sombraTenue {

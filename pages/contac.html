@@ -23,11 +23,11 @@
 <header id="Top">
   <nav class="navbar navbar-expand-md navbar-light">
       <div class="container">
-        <a class="navbar-brand ml" href="../index.html">
-            <img src="../images/logoblnc.png" alt="" class="logo">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../images/logoblnc.png" alt="" class="logo img-fluid">
         </a>     
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-ic"></span>
         </button>
 
         <div class="collapse navbar-collapse dp-flex justify-content-end mr-5" id="navbarSupportedContent">
@@ -50,13 +50,14 @@
 </header>
 <!--MAIN--> 
 <main>
-    <p class="titulo animate__animated animate__fadeInLeft animate__fast">siempre estoy abierto a conocer nueva gente y a formar equipos. podés contactarme con tu propuesta o encargo.
-    </p>
-
+   <div class="container text-center text-uppercase text-white fw-bolder p-4 bg-dark rounded mx-auto mt-5 mb-5 w-75">
+      <p class=" d-inline animate__animated animate__fadeInLeft animate__fast">siempre estoy abierto a conocer nueva gente y a formar equipos. podés contactarme con tu propuesta o encargo.
+      </p>
+   </div>
 <form>
-    <div class="wrapContac texto  animate__animated animate__fadeInRight animate__fast">
-        <fieldset>
-        <legend>Contactá conmigo    
+    <div class="container text-center text-uppercase text-white fw-bolder sombraTenue bg-dark w-50 py-4 my-5 rounded animate__animated animate__fadeInRight animate__fast">
+        <fieldset class="container display-8 overflow-hidden">
+        <legend class="display-7">Contactá conmigo    
         </legend>
         <div>
             <label for="deseo">Quiero    
@@ -90,16 +91,14 @@
             <input type="email" id="mail" placeholder="Escribí tu e-mail">
         </div>
         <div>
-            <label for="tuidea">Contame tu idea
+            <label class="mx-auto" for="tuidea">Contame tu idea
             </label> 
         </div>
         <div>
-            <textarea  id="tuidea" cols="30" rows="10" placeholder="Qué te gustaría hacer juntos">       
+            <textarea  id="tuidea" placeholder="Qué te gustaría hacer juntos">       
             </textarea> 
         </div>
-        <div> 
-            <input type="submit" value="Enviar"> 
-        </div>
+        
         <div>
             <label for="info">¿Cómo me conociste?
             </label>
@@ -112,6 +111,9 @@
             <option value="value3">Me contó un amigx
             </option>
         </select>
+        <div > 
+          <input type="submit" value="Enviar"> 
+      </div>
         </fieldset>
     </div>
 </form>
