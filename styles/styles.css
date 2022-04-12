@@ -263,7 +263,7 @@ fieldset label{
     }
 }     
 /*MEDIAQUERRY */
-@media (max-width: 650px){
+@media (max-width: 600px){
     .wrap {
         padding:1em;
     }
