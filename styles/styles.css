@@ -4,7 +4,6 @@
 #ABAD9A   grisClaro
 #00F7DA   cyanClaro
 #00BCA3   cyanOscuro*/
-
 * {
     padding: 0;
     margin: 0;
@@ -30,7 +29,7 @@
     font-weight: 800;
     font-size: 1.2vw;
 }
-@media (max-width: 768px){
+@media (max-width: 800px){
     .nav-link {
         font-size: 15px;
     }
