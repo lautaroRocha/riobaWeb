@@ -1,21 +1,22 @@
+
 .pie {
-    background-color: #000;
-    color: $grisclaro;
+    background-color:#000;
+    color: $grisClaro;
     bottom:0;
     gap: 1em;
-}
-.pie a {
-    font-weight: 600;
-    margin: 0% 3%;
-    color: $grisClaro;
-}
-.pie a:hover{
-    color: $mostaza;
+    a {
+        font-weight: 600;
+        margin: 0% 3%;
+        color: $grisClaro;
+        &:hover{
+            color: $mostaza;
+        }
+    }
 }
 .bi {
     height: 2em;
     width: auto;
-}
-.bi:hover {
-    color: $mostaza;
+    :hover {
+        color: $mostaza;
+    }
 }

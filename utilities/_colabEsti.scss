@@ -1,10 +1,12 @@
+@import "utilities/_variables.scss"; 
+
 .carousel {
     width: 400px;
     height: auto;
     overflow: hidden;
 }
 .wrapCaru {
-    background-color: $transpa;
+    background-color: $transpaClaro;
     margin:10vh 10%;
     padding: 5vh;
     border-radius: 3%;
@@ -19,7 +21,7 @@
     background-color: rgba(255, 255, 255, .4) !important;
 }
 .bg-dark{
-    background-color: $transpa !important;
+    background-color: $transpaClaro !important;
 }
 .rounded {
     border-radius: 3% !important;

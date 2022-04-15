@@ -94,21 +94,18 @@
   color: #ABAD9A;
   bottom: 0;
   gap: 1em; }
-
-.pie a {
-  font-weight: 600;
-  margin: 0% 3%;
-  color: #ABAD9A; }
-
-.pie a:hover {
-  color: #BFE028; }
+  .pie a {
+    font-weight: 600;
+    margin: 0% 3%;
+    color: #ABAD9A; }
+    .pie a:hover {
+      color: #BFE028; }
 
 .bi {
   height: 2em;
   width: auto; }
-
-.bi:hover {
-  color: #BFE028; }
+  .bi :hover {
+    color: #BFE028; }
 
 .logo {
   margin-left: 5%;
@@ -119,6 +116,8 @@
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.6); }
+  .navbar ul {
+    margin-right: 5%; }
   .navbar .nav-link {
     text-transform: uppercase;
     color: #fff !important;
@@ -131,19 +130,22 @@
     font-size: 1em; }
 
 @media (max-width: 768px) {
-  .nav-link {
-    font-size: 15px; } }
+  .navbar .nav-link {
+    font-size: 1rem; } }
 
-ul {
-  margin-right: 5%; }
-
+/*PALETA
+#BFE028   verdeMostaza
+#464838   grisOscuro
+#ABAD9A   grisClaro
+#00F7DA   cyanClaro
+#00BCA3   cyanOscuro*/
 .carousel {
   width: 400px;
   height: auto;
   overflow: hidden; }
 
 .wrapCaru {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   margin: 10vh 10%;
   padding: 5vh;
   border-radius: 3%;
@@ -158,7 +160,7 @@ ul {
   background-color: rgba(255, 255, 255, 0.4) !important; }
 
 .bg-dark {
-  background-color: rgba(0, 0, 0, 0.6) !important; }
+  background-color: rgba(0, 0, 0, 0.4) !important; }
 
 .rounded {
   border-radius: 3% !important; }

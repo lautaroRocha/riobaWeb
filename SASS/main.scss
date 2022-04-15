@@ -46,14 +46,14 @@
 .sombraTenue {
     text-shadow:$mostaza 2px 2px 5px;
 }
-@media (max-width: 992px) {
+@media (max-width: $pantallaMedia) {
     .wrap {
         height: auto;
         padding-left: 4em;
         max-height:fit-content;
     }
 }
-@media (max-width: 576px){
+@media (max-width: $pantallaXChica){
     .wrap {
         padding:1em;
     }

@@ -9,6 +9,9 @@
 
 .navbar {
     background-color: $transpa;
+    ul {
+        margin-right: 5%;
+    }  
     .nav-link{
         text-transform: uppercase;
         color: #fff !important;
@@ -23,11 +26,10 @@
         font-size: 1em;
     } 
 }
-@media (max-width: 768px){
-    .nav-link {
-        font-size: 15px;
+@media (max-width: $pantallaChica){
+    .navbar {
+        .nav-link {
+            font-size: 1rem;
+        }
     }
-}
-ul {
-    margin-right: 5%;
 }
