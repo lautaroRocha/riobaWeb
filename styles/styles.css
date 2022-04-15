@@ -20,6 +20,9 @@
     width: 45vh;
     height: auto; 
 }  
+.logo:hover{
+    filter: drop-shadow(-1px 0px 5px  #ABAD9A);
+}
 .navbar {
     background-color: rgba(0,0,0,.6);
 }
@@ -96,9 +99,11 @@
     text-align: center;
     grid-area:soy;   
     padding-bottom: 1.9em;
+    font-size:1.7em;
+    font-weight
 }
     #patch{
-    color:#FFF;
+    color: #FFF;
     text-transform: uppercase;
     grid-area:patch;
     text-align: center;
@@ -185,7 +190,7 @@
 }
 /*ESTILOS DE CONTACTO*/
 .display-8 {
-    font-size: 1.5vw;
+    font-size: 1em;
 }
 fieldset label{
     margin-top: 1em;
@@ -206,18 +211,12 @@ fieldset label{
 .sombraTenue {
     text-shadow:#BFE028 2px 2px 5px;
 }
-.modDisItem {
-    width: 80%;
-    height: auto;
-}.modDisItem {
-    width: 80%;
-    height: auto;
-}
 /*MEDIAQUERRY */
 @media (max-width: 992px) {
     .wrap {
         height: auto;
         padding-left: 4em;
+        max-height:fit-content;
     }
     .gridIndex { 
         grid-template-columns: repeat(5, 1fr);
