@@ -4,7 +4,7 @@
     overflow: hidden;
 }
 .wrapCaru {
-    background-color: rgba(0,0,0,.4);
+    background-color: $transpa;
     margin:10vh 10%;
     padding: 5vh;
     border-radius: 3%;
@@ -19,15 +19,15 @@
     background-color: rgba(255, 255, 255, .4) !important;
 }
 .bg-dark{
-    background-color: rgba(0,0,0,.4) !important;
+    background-color: $transpa !important;
 }
 .rounded {
     border-radius: 3% !important;
 }
 .warning {
-    color: #BFE028;
+    color: $mostaza;
 }
 .container p a:hover {
-    color:#BFE028;
+    color: $mostaza;
     text-shadow:#fff 2px 2px 10px;
 }

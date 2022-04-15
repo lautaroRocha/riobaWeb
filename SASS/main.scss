@@ -9,34 +9,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+    font-family: 'Red Hat Mono', monospace;}
 .wrapTotal {
    background-color: $grisClaro; 
    background-repeat: round;
    background-image: url(../images/trbien.png);
 }
 .wrap{
-    background-color: $transpa;
+    background-color: $transpaClaro;
     margin:10%;
     margin-top:3em;
     padding: 2em;
     border-radius: 3%;
     display: flex;                                   
     height: 80vh;
-    justify-content: center; 
-
-    @media (max-width: 992px) {
-        .wrap {
-            height: auto;
-            padding-left: 4em;
-            max-height:fit-content;
-        }
-    }
-    @media (max-width: 576px){
-        .wrap {
-            padding:1em;
-        }
-}
+    justify-content: center;    
 }
 .texto {
     text-transform: uppercase;
@@ -57,5 +44,17 @@
     font-size: 4vw;    
 }
 .sombraTenue {
-    text-shadow:#BFE028 2px 2px 5px;
+    text-shadow:$mostaza 2px 2px 5px;
+}
+@media (max-width: 992px) {
+    .wrap {
+        height: auto;
+        padding-left: 4em;
+        max-height:fit-content;
+    }
+}
+@media (max-width: 576px){
+    .wrap {
+        padding:1em;
+    }
 }
