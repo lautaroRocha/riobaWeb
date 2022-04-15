@@ -4,283 +4,234 @@
 #ABAD9A   grisClaro
 #00F7DA   cyanClaro
 #00BCA3   cyanOscuro*/
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Red Hat Mono', monospace;
-}
-.wrapTotal {
-    background-color: #ABAD9A;
-    background-repeat: round;  
-    background-image: url(../images/trbien.png);
-}
-/*---->HEADER */
-.logo {
-    width: 45vh;
-    height: auto; 
-}  
-.logo:hover{
-    filter: drop-shadow(-1px 0px 5px  #ABAD9A);
-}
-.navbar {
-    background-color: rgba(0,0,0,.6);
-}
-.nav-link{
-    text-transform: uppercase;
-    color: #fff !important;
-    font-weight: 800;
-    font-size: 1.2vw;
-}
-@media (max-width: 768px){
-    .nav-link {
-        font-size: 15px;
-    }
-}
-.nav-link:hover{
-    color: #BFE028 !important;
-}
-.navbar-toggler{
-    background-color: rgba(255, 255, 255, .5);
-    font-size: 1em;
-} 
-/*-----> MAIN */
-.wrap {
-    background-color: rgba(0,0,0,.4);
-    margin:10%;
-    margin-top:3em;
-    padding: 2em;
-    border-radius: 3%;
-    display: flex;                                   
-    height: 80vh;
-    justify-content: center; 
-    overflow: hid;
-}
-.texto {
-    text-transform: uppercase;
-    text-align: justify;
-    color: #FFF;
-    margin: 3vh;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-}
-.sombra {
-    text-shadow:#BFE028 2px 2px 
-}.sombraInvertida {
-    text-shadow:#BFE028 2px -2px 
-}
-/*------>INDEX*/
 .gridIndex {
-    display: grid;
-    grid-template-columns: repeat (10, 1fr);
-    grid-template-rows: repeat(9, 1fr) .5fr;
-    grid-template-areas:  "buzo buzo chomba chomba soy soy soy soy"
-                          "buzo buzo chomba chomba soy soy soy soy"
-                          "buzo buzo chomba chomba atras atras cream cream"
-                          "buzo buzo chomba chomba atras atras cream cream"
-                          "buzo buzo chomba chomba atras atras cream cream"
-                          "buzo buzo chomba chomba atras atras cream cream"
-                          "buzo buzo chomba chomba atras atras cream cream"
-                          "buzo buzo chomba chomba bolso bolso cream cream"
-                          "buzo buzo chomba chomba bolso bolso cream cream"
-                          "patch patch patch patch bolso bolso cream cream";
-                         
-    gap:1em;
-}
-.gridIndex img{
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 3%;
-}
-    #soyT{
-    text-align: center;
-    grid-area:soy;   
-    padding-bottom: 1.9em;
-    font-size:1.7em;
-    font-weight
-}
-    #patch{
-    color: #FFF;
-    text-transform: uppercase;
-    grid-area:patch;
-    text-align: center;
-    font-size: 1.7rem;
-    font-weight: 300;
-}
-    #buzoA {
-    grid-area: buzo;
-}
-    #chomba {
-    grid-area:chomba;
-    width: 100%;
-}
-    #bolso {
-    grid-area:bolso;
+  display: grid;
+  grid-template-columns: repeat 10, 1fr;
+  grid-template-rows: repeat(9, 1fr) 0.5fr;
+  grid-template-areas: "buzo buzo chomba chomba soy soy soy soy" "buzo buzo chomba chomba soy soy soy soy" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba bolso bolso cream cream" "buzo buzo chomba chomba bolso bolso cream cream" "patch patch patch patch bolso bolso cream cream";
+  gap: 1em; }
+
+.gridIndex img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 3%; }
+
+#soyT {
+  text-align: center;
+  grid-area: soy;
+  padding-bottom: 1.9em;
+  font-size: 1.7em;
+  font-weight: 900; }
+
+#patch {
+  color: #FFF;
+  text-transform: uppercase;
+  grid-area: patch;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 300; }
+
+#buzoA {
+  grid-area: buzo; }
+
+#chomba {
+  grid-area: chomba;
+  width: 100%; }
+
+#bolso {
+  grid-area: bolso;
+  height: 100%; }
+
+#cream {
+  grid-area: cream;
+  height: 100%;
+  width: 100%; }
+
+#atras {
+  grid-area: atras;
+  width: 100%; }
+
+@media (max-width: 992px) {
+  .gridIndex {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 2fr); }
+  #buzoA {
+    grid-area: 1 / 1 / 7 / 3;
     height: 100%;
-}
-    #cream {
-    grid-area:cream;
+    width: auto; }
+  #soyT {
+    grid-area: 1 / 3 / 4 / 6;
+    font-size: 2em;
+    padding: 0; }
+  #atras {
+    grid-area: 4 / 3 / 7 / 6; }
+  #cream {
+    grid-area: 10/1/12/4; }
+  #bolso {
+    display: none; }
+  #patch {
+    grid-area: 7 / 1 / 10 / 6; }
+  #chomba {
+    grid-area: 10/4/12/6;
     height: 100%;
-    width: 100%;
-}
-    #atras {
-    grid-area:atras;
-    width: 100%;
-}
-/* FOOTER */
+    width: auto; } }
+
+@media (max-width: 576px) {
+  .gridIndex {
+    display: flex;
+    flex-direction: column-reverse; }
+  #chomba {
+    display: none; }
+  #buzoA {
+    order: 1; }
+  #soyT {
+    order: 2; }
+  #cream {
+    display: none; } }
+
 .pie {
-    background-color: #000;
-    color: #ABAD9A;
-    bottom:0;
-    gap: 1em;
-}
+  background-color: #000;
+  color: #ABAD9A;
+  bottom: 0;
+  gap: 1em; }
+
 .pie a {
-    font-weight: 600;
-    margin: 0% 3%;
-    color: #ABAD9A;
-}
-.pie a:hover{
-    color: #BFE028;
-}
+  font-weight: 600;
+  margin: 0% 3%;
+  color: #ABAD9A; }
+
+.pie a:hover {
+  color: #BFE028; }
 
 .bi {
-    height: 2em;
-    width: auto;
-}
+  height: 2em;
+  width: auto; }
+
 .bi:hover {
-    color: #BFE028;
-}
+  color: #BFE028; }
 
-/*ESTILOS DE COLAB*/
+.logo {
+  width: 45vh;
+  height: auto; }
+
+.logo:hover {
+  filter: drop-shadow(-1px 0px 5px #ABAD9A); }
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.nav-link {
+  text-transform: uppercase;
+  color: #fff !important;
+  font-weight: 800;
+  font-size: 1.2vw; }
+
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 15px; } }
+
+.nav-link:hover {
+  color: #BFE028 !important; }
+
+.navbar-toggler {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 1em; }
+
 .carousel {
-    width: 400px;
-    height: auto;
-    overflow: hidden;
-}
+  width: 400px;
+  height: auto;
+  overflow: hidden; }
+
 .wrapCaru {
-    background-color: rgba(0,0,0,.4);
-    margin:10vh 10%;
-    padding: 5vh;
-    border-radius: 3%;
-    display: flex;
-    height: 65vh;
-    justify-content: space-evenly;
-    width:fit-content;
-    gap:1em;
-    overflow: hidden;
-}
-.bg-light{
-    background-color: rgba(255, 255, 255, .4) !important;
-}
-.bg-dark{
-    background-color: rgba(0,0,0,.4) !important;
-}
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 10vh 10%;
+  padding: 5vh;
+  border-radius: 3%;
+  display: flex;
+  height: 65vh;
+  justify-content: space-evenly;
+  width: fit-content;
+  gap: 1em;
+  overflow: hidden; }
+
+.bg-light {
+  background-color: rgba(255, 255, 255, 0.4) !important; }
+
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.4) !important; }
+
 .rounded {
-    border-radius: 3% !important;
-}
+  border-radius: 3% !important; }
+
 .warning {
-    color: #BFE028;
-}
+  color: #BFE028; }
+
 .container p a:hover {
-    color:#BFE028;
-    text-shadow:#fff 2px 2px 10px;
-}
-/*ESTILOS DE CONTACTO*/
+  color: #BFE028;
+  text-shadow: #fff 2px 2px 10px; }
+
 .display-8 {
-    font-size: 1em;
-}
-fieldset label{
-    margin-top: 1em;
-}
-.boton{
-    margin:2em;
-    background-color: #BFE028;
-    color:#000;
-    text-transform: uppercase;
-    padding: .5em;
-    font-weight: 600;
-    box-shadow: -2vh 2vh #333 ;
-}
-/*MODELOS DISPONIBLES*/
+  font-size: 1em; }
+
+fieldset label {
+  margin-top: 1em; }
+
+.boton {
+  margin: 2em;
+  background-color: #BFE028;
+  color: #000;
+  text-transform: uppercase;
+  padding: .5em;
+  font-weight: 600;
+  box-shadow: -2vh 2vh #333; }
+
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.wrapTotal {
+  background-color: #ABAD9A;
+  background-repeat: round;
+  background-image: url(../images/trbien.png); }
+
+.wrap {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 10%;
+  margin-top: 3em;
+  padding: 2em;
+  border-radius: 3%;
+  display: flex;
+  height: 80vh;
+  justify-content: center; }
+  @media (max-width: 992px) {
+    .wrap .wrap {
+      height: auto;
+      padding-left: 4em;
+      max-height: fit-content; } }
+  @media (max-width: 576px) {
+    .wrap .wrap {
+      padding: 1em; } }
+
+.texto {
+  text-transform: uppercase;
+  text-align: justify;
+  color: #FFF;
+  margin: 3vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center; }
+
+.sombra {
+  text-shadow: #BFE028 2px 2px; }
+
+.sombraInvertida {
+  text-shadow: #BFE028 2px -2px; }
+
 .display-7 {
-    font-size: 4vw;    
-}
+  font-size: 4vw; }
+
 .sombraTenue {
-    text-shadow:#BFE028 2px 2px 5px;
-}
-/*MEDIAQUERRY */
-@media (max-width: 992px) {
-    .wrap {
-        height: auto;
-        padding-left: 4em;
-        max-height:fit-content;
-    }
-    .gridIndex { 
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(1, 2fr);
-    }
-    #buzoA { 
-        grid-area: 1 / 1 / 7 / 3; 
-        height: 100%; 
-        width: auto;
-    }
-    #soyT { 
-        grid-area: 1 / 3 / 4 / 6; 
-        font-size: 2em;
-        padding: 0;
-    }
-    #atras { 
-    grid-area: 4 / 3 / 7 / 6; 
-    } 
-    #cream {
-    grid-area: 10/1/12/4;
-    }
-    #bolso {
-    display: none;
-    }
-    #patch {
-    grid-area: 7 / 1 / 10 / 6;
-
-    }
-    #chomba {
-    grid-area: 10/4/12/6;
-    height: 100%; 
-    width: auto;}
-    
-    .wrapCaru {
-        flex-direction: column-reverse;
-        width: auto;
-        align-items: center;
-        gap: 2em;
-    }  
-    .pie {
-        padding-top: 15em;
-    }
-}     
-/*MEDIAQUERRY */
-@media (max-width: 576px){
-    .wrap {
-        padding:1em;
-    }
-    .gridIndex {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    #chomba {
-        display: none;
-    }
-    #buzoA {
-        order:1;
-    }
-    #soyT {
-        order: 2;
-    }
-    #cream {
-        display:none;
-    }
-}
-
-    
+  text-shadow: #BFE028 2px 2px 5px; }

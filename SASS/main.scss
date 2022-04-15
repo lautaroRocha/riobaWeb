@@ -1,1 +1,61 @@
-@import "utilities/_variables" 
+@import "utilities/_variables.scss"; 
+@import "utilities/_indexEsti.scss"; 
+@import "utilities/_footerEsti.scss"; 
+@import "utilities/_headerEsti.scss"; 
+@import "utilities/_colabEsti.scss"; 
+@import "utilities/_contactEsti.scss"; 
+
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapTotal {
+   background-color: $grisClaro; 
+   background-repeat: round;
+   background-image: url(../images/trbien.png);
+}
+.wrap{
+    background-color: $transpa;
+    margin:10%;
+    margin-top:3em;
+    padding: 2em;
+    border-radius: 3%;
+    display: flex;                                   
+    height: 80vh;
+    justify-content: center; 
+
+    @media (max-width: 992px) {
+        .wrap {
+            height: auto;
+            padding-left: 4em;
+            max-height:fit-content;
+        }
+    }
+    @media (max-width: 576px){
+        .wrap {
+            padding:1em;
+        }
+}
+}
+.texto {
+    text-transform: uppercase;
+    text-align: justify;
+    color: #FFF;
+    margin: 3vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.sombra {
+    text-shadow:$mostaza 2px 2px; 
+}.sombraInvertida {
+    text-shadow:$mostaza 2px -2px;
+} 
+.display-7 {
+    font-size: 4vw;    
+}
+.sombraTenue {
+    text-shadow:#BFE028 2px 2px 5px;
+}

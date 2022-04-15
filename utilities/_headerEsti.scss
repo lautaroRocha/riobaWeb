@@ -1,0 +1,28 @@
+.logo {
+    width: 45vh;
+    height: auto; 
+}  
+.logo:hover{
+    filter: drop-shadow(-1px 0px 5px  #ABAD9A);
+}
+.navbar {
+    background-color: rgba(0,0,0,.6);
+}
+.nav-link{
+    text-transform: uppercase;
+    color: #fff !important;
+    font-weight: 800;
+    font-size: 1.2vw;
+}
+@media (max-width: 768px){
+    .nav-link {
+        font-size: 15px;
+    }
+}
+.nav-link:hover{
+    color: $mostaza !important;
+}
+.navbar-toggler{
+    background-color: rgba(255, 255, 255, .5);
+    font-size: 1em;
+} 
