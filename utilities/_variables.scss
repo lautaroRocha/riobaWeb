@@ -17,3 +17,8 @@ $pantallaXChica: 576px;
 $pantallaChica: 768px; 
 $pantallaMedia: 992px;
 
+@mixin glassmorphism {
+    background-color: $transpaClaro;
+    box-shadow: -4px 4px 10px rgb(0, 0, 0,);
+    border: 1px solid rgba(255, 255, 255, .4);
+}

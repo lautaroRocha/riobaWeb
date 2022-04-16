@@ -137,12 +137,6 @@
   .navbar .nav-link {
     font-size: 1rem; } }
 
-/*PALETA
-#BFE028   verdeMostaza
-#464838   grisOscuro
-#ABAD9A   grisClaro
-#00F7DA   cyanClaro
-#00BCA3   cyanOscuro*/
 .carousel {
   width: 400px;
   height: auto;
@@ -199,13 +193,14 @@ fieldset label {
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
   margin: 10vh 25%;
-  padding: 1rem; }
+  padding: 1rem;
+  caret-color: #BFE028; }
 
 .wrapQS {
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.4);
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
   margin: 5vh 10vw;
   display: flex;
   height: 70%;

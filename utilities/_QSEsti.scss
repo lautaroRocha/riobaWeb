@@ -1,8 +1,6 @@
 .wrapQS {
-    background: $transpaClaro;
+    @include glassmorphism;
     border-radius: 16px;
-    box-shadow: -4px 4px 10px rgb(0, 0, 0,);
-    border: 1px solid rgba(255, 255, 255, .4);
     margin: 5vh 10vw;
     display: flex;
     height: 70%;

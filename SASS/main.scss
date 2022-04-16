@@ -17,9 +17,7 @@
    background-image: url(../images/trbien.png);
 }
 .wrap{
-    background-color: $transpaClaro;
-    box-shadow: -4px 4px 10px rgb(0, 0, 0,);
-    border: 1px solid rgba(255, 255, 255, .4);
+    @include glassmorphism;
     margin:10%;
     margin-top:3em;
     padding: 2em;
@@ -37,9 +35,7 @@
     text-shadow: 1px 1px 10px $grisClaro;
 }
 .titulo {
-    background-color: rgba(0,0,0,.4);
-    box-shadow: -4px 4px 10px rgb(0, 0, 0,);
-    border: 1px solid rgba(255, 255, 255, .4);
+    @include glassmorphism;
     padding: 1rem;
     border-radius: 3%;
     text-transform: uppercase;
