@@ -1,12 +1,10 @@
 .wrapQS {
     @include glassmorphism;
-    border-radius: 16px;
     margin: 5vh 10vw;
     display: flex;
     height: 70%;
     align-items: center;
     justify-content: space-between;
-
     p {
         width: 30%;
         margin: auto;

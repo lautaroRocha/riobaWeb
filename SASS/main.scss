@@ -15,13 +15,15 @@
 .wrapTotal {
    background-color: $grisClaro; 
    background-image: url(../images/trbien.png);
+   max-width: 100%;
+   overflow-x: hidden;
+   z-index: -1;
 }
 .wrap{
     @include glassmorphism;
     margin:10%;
     margin-top:3em;
     padding: 2em;
-    border-radius: 3%;
     display: flex;                                   
     height: 80vh;
     justify-content: center;    
@@ -37,7 +39,6 @@
 .titulo {
     @include glassmorphism;
     padding: 1rem;
-    border-radius: 3%;
     text-transform: uppercase;
     color: #FFF;
     margin: 10vh 25%;

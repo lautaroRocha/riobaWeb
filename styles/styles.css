@@ -113,7 +113,7 @@
   box-shadow: -4px 4px 10px black;
   border-bottom: 1px solid #464838; }
   .navbar .logo {
-    width: 45vh;
+    width: 15rem;
     height: auto; }
     .navbar .logo:hover {
       filter: drop-shadow(-1px 0px 5px #ABAD9A); }
@@ -138,7 +138,7 @@
     font-size: 1rem; } }
 
 .carousel {
-  width: 400px;
+  max-width: 400px;
   height: auto;
   overflow: hidden; }
 
@@ -146,8 +146,9 @@
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 5vh;
   border-radius: 3%;
+  backdrop-filter: blur(2px);
+  padding: 5vh;
   width: fit-content;
   gap: 1em;
   overflow: hidden; }
@@ -186,21 +187,31 @@ fieldset label {
   text-transform: uppercase;
   padding: .5em;
   font-weight: 600;
-  box-shadow: -2vh 2vh #464838; }
+  box-shadow: -2vh 2vh #222; }
 
 .contacWrap {
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  margin: 10vh 25%;
+  border-radius: 3%;
+  backdrop-filter: blur(2px);
+  margin: 10vh 20%;
+  min-width: 300px;
   padding: 1rem;
   caret-color: #BFE028; }
+
+.colCon {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
 
 .wrapQS {
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 16px;
+  border-radius: 3%;
+  backdrop-filter: blur(2px);
   margin: 5vh 10vw;
   display: flex;
   height: 70%;
@@ -242,8 +253,10 @@ fieldset label {
   flex-direction: column;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.4);
   box-shadow: -4px 4px 10px black;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 3%;
+  backdrop-filter: blur(2px);
   width: 25vw;
   margin: auto;
   margin-bottom: 10vh;
@@ -269,16 +282,20 @@ fieldset label {
 
 .wrapTotal {
   background-color: #ABAD9A;
-  background-image: url(../images/trbien.png); }
+  background-image: url(../images/trbien.png);
+  max-width: 100%;
+  overflow-x: hidden;
+  z-index: -1; }
 
 .wrap {
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 3%;
+  backdrop-filter: blur(2px);
   margin: 10%;
   margin-top: 3em;
   padding: 2em;
-  border-radius: 3%;
   display: flex;
   height: 80vh;
   justify-content: center; }
@@ -295,8 +312,9 @@ fieldset label {
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 1rem;
   border-radius: 3%;
+  backdrop-filter: blur(2px);
+  padding: 1rem;
   text-transform: uppercase;
   color: #FFF;
   margin: 10vh 25%;

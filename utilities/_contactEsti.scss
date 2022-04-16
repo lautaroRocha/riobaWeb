@@ -11,11 +11,18 @@ fieldset label{
     text-transform: uppercase;
     padding: .5em;
     font-weight: 600;
-    box-shadow: -2vh 2vh $grisOscuro;
+    box-shadow: -2vh 2vh #222;
 }
 .contacWrap {
     @include glassmorphism;
-    margin: 10vh 25%;
+    margin: 10vh 20%;
+    min-width: 300px;
     padding: 1rem;
     caret-color: $mostaza;
+}
+.colCon {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }

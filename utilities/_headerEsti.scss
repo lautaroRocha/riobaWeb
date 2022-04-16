@@ -3,7 +3,7 @@
     box-shadow: -4px 4px 10px rgb(0, 0, 0,);
     border-bottom: 1px solid $grisOscuro;
     .logo {
-        width: 45vh;
+        width: 15rem;
         height: auto; 
         &:hover{
             filter: drop-shadow(-1px 0px 5px $grisClaro);
@@ -38,4 +38,5 @@
             font-size: 1rem;
         }
     }
+   
 }
