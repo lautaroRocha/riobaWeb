@@ -1,0 +1,43 @@
+.wrapQS {
+    background: $transpaClaro;
+    border-radius: 16px;
+    box-shadow: -4px 4px 10px rgb(0, 0, 0,);
+    border: 1px solid rgba(255, 255, 255, .4);
+    margin: 5vh 10vw;
+    display: flex;
+    height: 70%;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+        width: 30%;
+        margin: auto;
+        text-align: center;
+        font-weight:600;
+    }
+    img {
+        height: auto;
+        width: 50%;
+        margin: 1rem;
+        border-radius: 3%
+    }
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+@media (max-width:$pantallaMedia) {
+    .wrapQS {
+        flex-direction: column-reverse;
+        padding: 1em;
+        img {
+            width: 100%;
+        }
+        p {
+            width: 100%;
+            font-weight: 500;
+        }
+    }
+    .reverse {
+        flex-direction: column;
+    }
+}

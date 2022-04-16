@@ -20,8 +20,9 @@
 #soyT {
   text-align: center;
   grid-area: soy;
-  padding-bottom: 1.9em;
-  font-size: 1.7em; }
+  font-size: 1.7em;
+  font-weight: 500;
+  margin: 0px; }
 
 #patch {
   color: #FFF;
@@ -107,24 +108,27 @@
   .bi :hover {
     color: #BFE028; }
 
-.logo {
-  margin-left: 5%;
-  width: 45vh;
-  height: auto; }
-  .logo:hover {
-    filter: drop-shadow(-1px 0px 5px #ABAD9A); }
-
 .navbar {
-  background-color: rgba(0, 0, 0, 0.6); }
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: -4px 4px 10px black;
+  border-bottom: 1px solid #464838; }
+  .navbar .logo {
+    width: 45vh;
+    height: auto; }
+    .navbar .logo:hover {
+      filter: drop-shadow(-1px 0px 5px #ABAD9A); }
+  .navbar img {
+    margin-left: 7%; }
   .navbar ul {
-    margin-right: 5%; }
+    margin-right: 7%; }
   .navbar .nav-link {
     text-transform: uppercase;
     color: #fff !important;
     font-weight: 700;
     font-size: 1.2vw; }
     .navbar .nav-link:hover {
-      color: #BFE028 !important; }
+      color: #BFE028 !important;
+      filter: drop-shadow(1px 0px 5px rgba(255, 255, 255, 0.3)); }
   .navbar .navbar-toggler {
     background-color: rgba(255, 255, 255, 0.5);
     font-size: 1em; }
@@ -146,18 +150,21 @@
 
 .wrapCaru {
   background-color: rgba(0, 0, 0, 0.4);
-  margin: 10vh 10%;
+  box-shadow: -4px 4px 10px black;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 5vh;
   border-radius: 3%;
-  display: flex;
-  height: 65vh;
-  justify-content: space-evenly;
   width: fit-content;
   gap: 1em;
   overflow: hidden; }
 
+.margen {
+  margin-top: 25vh; }
+
 .bg-light {
-  background-color: rgba(255, 255, 255, 0.4) !important; }
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  box-shadow: -4px 4px 10px black;
+  border: 1px solid #ABAD9A; }
 
 .bg-dark {
   background-color: rgba(0, 0, 0, 0.4) !important; }
@@ -185,7 +192,79 @@ fieldset label {
   text-transform: uppercase;
   padding: .5em;
   font-weight: 600;
-  box-shadow: -2vh 2vh #333; }
+  box-shadow: -2vh 2vh #464838; }
+
+.contacWrap {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: -4px 4px 10px black;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 10vh 25%;
+  padding: 1rem; }
+
+.wrapQS {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  box-shadow: -4px 4px 10px black;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 5vh 10vw;
+  display: flex;
+  height: 70%;
+  align-items: center;
+  justify-content: space-between; }
+  .wrapQS p {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    font-weight: 600; }
+  .wrapQS img {
+    height: auto;
+    width: 50%;
+    margin: 1rem;
+    border-radius: 3%; }
+
+.reverse {
+  flex-direction: row-reverse; }
+
+@media (max-width: 992px) {
+  .wrapQS {
+    flex-direction: column-reverse;
+    padding: 1em; }
+    .wrapQS img {
+      width: 100%; }
+    .wrapQS p {
+      width: 100%;
+      font-weight: 500; }
+  .reverse {
+    flex-direction: column; } }
+
+.grilla3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center; }
+
+.modDisWrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: -4px 4px 10px black;
+  width: 25vw;
+  margin: auto;
+  margin-bottom: 10vh;
+  padding: 1rem; }
+  .modDisWrap img {
+    border-radius: 3%;
+    height: 80%; }
+
+@media (max-width: 992px) {
+  .grilla3 {
+    display: flex;
+    flex-direction: column; }
+  .modDisWrap {
+    width: 70vw; }
+    .modDisWrap img {
+      height: 60%; } }
 
 :root {
   padding: 0;
@@ -195,11 +274,12 @@ fieldset label {
 
 .wrapTotal {
   background-color: #ABAD9A;
-  background-repeat: round;
   background-image: url(../images/trbien.png); }
 
 .wrap {
   background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: -4px 4px 10px black;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   margin: 10%;
   margin-top: 3em;
   padding: 2em;
@@ -213,10 +293,26 @@ fieldset label {
   text-align: justify;
   color: #FFF;
   margin: 3vh;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center; }
+  text-align: center;
+  text-shadow: 1px 1px 10px #ABAD9A; }
+
+.titulo {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: -4px 4px 10px black;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 1rem;
+  border-radius: 3%;
+  text-transform: uppercase;
+  color: #FFF;
+  margin: 10vh 25%;
+  text-align: center;
+  font-weight: 600;
+  max-height: 250px; }
+  .titulo a {
+    text-decoration: none;
+    color: #BFE028; }
+    .titulo a:hover {
+      filter: drop-shadow(1px 0px 5px rgba(255, 255, 255, 0.3)); }
 
 .sombra {
   text-shadow: #BFE028 2px 2px; }
@@ -225,7 +321,7 @@ fieldset label {
   text-shadow: #BFE028 2px -2px; }
 
 .display-7 {
-  font-size: 4vw; }
+  font-size: 2rem; }
 
 .sombraTenue {
   text-shadow: #BFE028 2px 2px 5px; }

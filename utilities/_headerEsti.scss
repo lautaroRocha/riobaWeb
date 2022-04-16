@@ -1,16 +1,19 @@
-.logo {
-    margin-left: 5%;
-    width: 45vh;
-    height: auto; 
-    &:hover{
-        filter: drop-shadow(-1px 0px 5px $grisClaro);
-    }
-}  
-
 .navbar {
     background-color: $transpa;
+    box-shadow: -4px 4px 10px rgb(0, 0, 0,);
+    border-bottom: 1px solid $grisOscuro;
+    .logo {
+        width: 45vh;
+        height: auto; 
+        &:hover{
+            filter: drop-shadow(-1px 0px 5px $grisClaro);
+        }
+    }  
+    img {
+        margin-left: 7%;
+    }
     ul {
-        margin-right: 5%;
+        margin-right: 7%;
     }  
     .nav-link{
         text-transform: uppercase;
@@ -19,6 +22,8 @@
         font-size: 1.2vw;
         &:hover{
             color: $mostaza !important;
+            filter: drop-shadow(1px 0px 5px $grisTenue);
+
         }
     }
     .navbar-toggler{
@@ -26,6 +31,7 @@
         font-size: 1em;
     } 
 }
+
 @media (max-width: $pantallaChica){
     .navbar {
         .nav-link {

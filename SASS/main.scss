@@ -4,6 +4,8 @@
 @import "utilities/_headerEsti.scss"; 
 @import "utilities/_colabEsti.scss"; 
 @import "utilities/_contactEsti.scss"; 
+@import "utilities/_QSEsti.scss"; 
+@import "utilities/_modDisEsti.scss"; 
 
 :root {
     padding: 0;
@@ -12,11 +14,12 @@
     font-family: 'Red Hat Mono', monospace;}
 .wrapTotal {
    background-color: $grisClaro; 
-   background-repeat: round;
    background-image: url(../images/trbien.png);
 }
 .wrap{
     background-color: $transpaClaro;
+    box-shadow: -4px 4px 10px rgb(0, 0, 0,);
+    border: 1px solid rgba(255, 255, 255, .4);
     margin:10%;
     margin-top:3em;
     padding: 2em;
@@ -30,18 +33,37 @@
     text-align: justify;
     color: #FFF;
     margin: 3vh;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    text-shadow: 1px 1px 10px $grisClaro;
+}
+.titulo {
+    background-color: rgba(0,0,0,.4);
+    box-shadow: -4px 4px 10px rgb(0, 0, 0,);
+    border: 1px solid rgba(255, 255, 255, .4);
+    padding: 1rem;
+    border-radius: 3%;
+    text-transform: uppercase;
+    color: #FFF;
+    margin: 10vh 25%;
+    text-align: center;
+    font-weight: 600;
+    max-height: 250px;
+    a {
+        text-decoration: none;
+        color: $mostaza;
+        &:hover {
+            filter: drop-shadow(1px 0px 5px $grisTenue);
+    }
+}
 }
 .sombra {
     text-shadow:$mostaza 2px 2px; 
-}.sombraInvertida {
+}
+.sombraInvertida {
     text-shadow:$mostaza 2px -2px;
 } 
 .display-7 {
-    font-size: 4vw;    
+    font-size: 2rem;    
 }
 .sombraTenue {
     text-shadow:$mostaza 2px 2px 5px;

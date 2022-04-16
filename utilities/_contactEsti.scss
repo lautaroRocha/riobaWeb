@@ -11,5 +11,13 @@ fieldset label{
     text-transform: uppercase;
     padding: .5em;
     font-weight: 600;
-    box-shadow: -2vh 2vh #333 ;
+    box-shadow: -2vh 2vh $grisOscuro;
+}
+.contacWrap {
+    background-color: $transpaClaro;
+    box-shadow: -4px 4px 10px rgb(0, 0, 0,);
+    border: 1px solid rgba(255, 255, 255, .4);
+    margin: 10vh 25%;
+    padding: 1rem;
+
 }

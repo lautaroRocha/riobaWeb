@@ -7,18 +7,21 @@
 }
 .wrapCaru {
     background-color: $transpaClaro;
-    margin:10vh 10%;
+    box-shadow: -4px 4px 10px rgb(0, 0, 0,);
+    border: 1px solid rgba(255, 255, 255, .4);
     padding: 5vh;
     border-radius: 3%;
-    display: flex;
-    height: 65vh;
-    justify-content: space-evenly;
     width:fit-content;
     gap:1em;
-    overflow: hidden;
+    overflow: hidden;                 
+}
+.margen {
+    margin-top:25vh;
 }
 .bg-light{
     background-color: rgba(255, 255, 255, .4) !important;
+    box-shadow: -4px 4px 10px rgb(0, 0, 0,);
+    border: 1px solid $grisClaro;
 }
 .bg-dark{
     background-color: $transpaClaro !important;
