@@ -15,8 +15,10 @@
         height: auto;
         width: 50%;
         margin: 1rem;
-        border-radius: 3%
+        border-radius: 3%;
+        border: 1px solid rgba(255, 255, 255, .4);
     }
+  
 }
 .reverse {
     flex-direction: row-reverse;

@@ -21,6 +21,6 @@ $pantallaMedia: 992px;
     background-color: $transpaClaro;
     box-shadow: -4px 4px 10px rgb(0, 0, 0,);
     border: 1px solid rgba(255, 255, 255, .4);
-    border-radius: 3%;
-    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    backdrop-filter: blur(1px);
 }

@@ -146,12 +146,16 @@
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 3%;
-  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  backdrop-filter: blur(1px);
   padding: 5vh;
   width: fit-content;
   gap: 1em;
   overflow: hidden; }
+  .wrapCaru img {
+    border: 1px solid rgba(255, 255, 255, 0.4); }
+  .wrapCaru video {
+    border: 1px solid rgba(255, 255, 255, 0.4); }
 
 .margen {
   margin-top: 25vh; }
@@ -193,8 +197,8 @@ fieldset label {
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 3%;
-  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  backdrop-filter: blur(1px);
   margin: 10vh 20%;
   min-width: 300px;
   padding: 1rem;
@@ -210,8 +214,8 @@ fieldset label {
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 3%;
-  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  backdrop-filter: blur(1px);
   margin: 5vh 10vw;
   display: flex;
   height: 70%;
@@ -226,7 +230,8 @@ fieldset label {
     height: auto;
     width: 50%;
     margin: 1rem;
-    border-radius: 3%; }
+    border-radius: 3%;
+    border: 1px solid rgba(255, 255, 255, 0.4); }
 
 .reverse {
   flex-direction: row-reverse; }
@@ -255,8 +260,8 @@ fieldset label {
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 3%;
-  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  backdrop-filter: blur(1px);
   width: 25vw;
   margin: auto;
   margin-bottom: 10vh;
@@ -291,8 +296,8 @@ fieldset label {
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 3%;
-  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  backdrop-filter: blur(1px);
   margin: 10%;
   margin-top: 3em;
   padding: 2em;
@@ -312,8 +317,8 @@ fieldset label {
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 3%;
-  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  backdrop-filter: blur(1px);
   padding: 1rem;
   text-transform: uppercase;
   color: #FFF;
