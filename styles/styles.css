@@ -161,9 +161,11 @@
   margin-top: 25vh; }
 
 .bg-light {
-  background-color: rgba(255, 255, 255, 0.4) !important;
+  background-color: rgba(255, 255, 255, 0.3) !important;
   box-shadow: -4px 4px 10px black;
   border: 1px solid #ABAD9A; }
+  .bg-light span {
+    font-weight: 400; }
 
 .bg-dark {
   background-color: rgba(0, 0, 0, 0.4) !important; }
