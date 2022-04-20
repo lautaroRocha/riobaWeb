@@ -1,8 +1,9 @@
 .wrapQS {
     @include glassmorphism;
-    margin: 5vh 10vw;
+    margin: 5vh auto;
     display: flex;
-    height: 70%;
+    height: fit-content;
+    max-width: 60rem;
     align-items: center;
     justify-content: space-between;
     p {
@@ -18,7 +19,7 @@
         border-radius: 3%;
         border: 1px solid rgba(255, 255, 255, .4);
     }
-  
+
 }
 .reverse {
     flex-direction: row-reverse;
@@ -27,6 +28,7 @@
     .wrapQS {
         flex-direction: column-reverse;
         padding: 1em;
+        margin: 3rem;
         img {
             width: 100%;
         }

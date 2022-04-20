@@ -1,11 +1,11 @@
-@import "utilities/_variables.scss"; 
-@import "utilities/_indexEsti.scss"; 
-@import "utilities/_footerEsti.scss"; 
-@import "utilities/_headerEsti.scss"; 
-@import "utilities/_colabEsti.scss"; 
-@import "utilities/_contactEsti.scss"; 
-@import "utilities/_QSEsti.scss"; 
-@import "utilities/_modDisEsti.scss"; 
+@import "utilities/variables"; 
+@import "utilities/indexEsti"; 
+@import "utilities/footerEsti"; 
+@import "utilities/headerEsti"; 
+@import "utilities/colabEsti"; 
+@import "utilities/contactEsti"; 
+@import "utilities/QSEsti"; 
+@import "utilities/modDisEsti"; 
 
 :root {
     padding: 0;
@@ -18,15 +18,17 @@
    max-width: 100%;
    overflow-x: hidden;
    z-index: -1;
+   height: 100vh;
 }
+
 .wrap{
     @include glassmorphism;
-    margin:10%;
-    margin-top:3em;
+    margin:3em auto;
+    width: fit-content;
+    max-width: 60rem;
     padding: 2em;
     display: flex;                                   
-    height: 80vh;
-    justify-content: center;    
+    max-height: 28rem;
 }
 .texto {
     text-transform: uppercase;
@@ -70,10 +72,12 @@
         height: auto;
         padding-left: 4em;
         max-height:fit-content;
+        margin: 3rem;
     }
 }
 @media (max-width: $pantallaXChica){
     .wrap {
+        margin: 10%;
         padding:1em;
     }
 }

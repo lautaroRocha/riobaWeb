@@ -2,8 +2,10 @@
 .pie {
     background-color:#000;
     color: $grisClaro;
-    bottom:0;
+    bottom: 0;
+    margin-top: 10rem;
     gap: 1em;
+    width: 100vw;
     a {
         font-weight: 600;
         margin: 0% 3%;

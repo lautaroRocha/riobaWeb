@@ -2,6 +2,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3rem;
 }
 
 .modDisWrap {
@@ -9,9 +12,9 @@
     flex-direction: column;
     text-align: center;
     @include glassmorphism;
-    width: 25vw;
+    max-width: 20rem;
+    min-height: fit-content;
     margin: auto;
-    margin-bottom: 10vh;
     padding: 1rem;
     img {
         border-radius: 3%;

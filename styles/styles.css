@@ -94,7 +94,9 @@
   background-color: #000;
   color: #ABAD9A;
   bottom: 0;
-  gap: 1em; }
+  margin-top: 10rem;
+  gap: 1em;
+  width: 100vw; }
   .pie a {
     font-weight: 600;
     margin: 0% 3%;
@@ -111,7 +113,8 @@
 .navbar {
   background-color: rgba(0, 0, 0, 0.6);
   box-shadow: -4px 4px 10px black;
-  border-bottom: 1px solid #464838; }
+  border-bottom: 1px solid #464838;
+  width: 100vw; }
   .navbar .logo {
     width: 15rem;
     height: auto; }
@@ -218,9 +221,10 @@ fieldset label {
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   backdrop-filter: blur(1px);
-  margin: 5vh 10vw;
+  margin: 5vh auto;
   display: flex;
-  height: 70%;
+  height: fit-content;
+  max-width: 60rem;
   align-items: center;
   justify-content: space-between; }
   .wrapQS p {
@@ -241,7 +245,8 @@ fieldset label {
 @media (max-width: 992px) {
   .wrapQS {
     flex-direction: column-reverse;
-    padding: 1em; }
+    padding: 1em;
+    margin: 3rem; }
     .wrapQS img {
       width: 100%; }
     .wrapQS p {
@@ -253,7 +258,10 @@ fieldset label {
 .grilla3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  place-items: center; }
+  place-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem; }
 
 .modDisWrap {
   display: flex;
@@ -264,9 +272,9 @@ fieldset label {
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   backdrop-filter: blur(1px);
-  width: 25vw;
+  max-width: 20rem;
+  min-height: fit-content;
   margin: auto;
-  margin-bottom: 10vh;
   padding: 1rem; }
   .modDisWrap img {
     border-radius: 3%;
@@ -292,7 +300,8 @@ fieldset label {
   background-image: url(../images/trbien.png);
   max-width: 100%;
   overflow-x: hidden;
-  z-index: -1; }
+  z-index: -1;
+  height: 100vh; }
 
 .wrap {
   background-color: rgba(0, 0, 0, 0.4);
@@ -300,12 +309,12 @@ fieldset label {
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   backdrop-filter: blur(1px);
-  margin: 10%;
-  margin-top: 3em;
+  margin: 3em auto;
+  width: fit-content;
+  max-width: 60rem;
   padding: 2em;
   display: flex;
-  height: 80vh;
-  justify-content: center; }
+  max-height: 28rem; }
 
 .texto {
   text-transform: uppercase;
@@ -350,8 +359,10 @@ fieldset label {
   .wrap {
     height: auto;
     padding-left: 4em;
-    max-height: fit-content; } }
+    max-height: fit-content;
+    margin: 3rem; } }
 
 @media (max-width: 576px) {
   .wrap {
+    margin: 10%;
     padding: 1em; } }
