@@ -1,4 +1,4 @@
-.wrapQS {
+.QSwrap {
     @include glassmorphism;
     margin: 5vh auto;
     display: flex;
@@ -28,7 +28,7 @@
 }
 
 @media (max-width:$pantallaMedia) {
-    .wrapQS {
+    .QSwrap {
         flex-direction: column-reverse;
         padding: 1em;
         margin: 3rem auto;
@@ -44,13 +44,14 @@
         }
     }
 
-    .reverse {
-        flex-direction: column;
-    }
+    
 }
 
 @media (max-width:$pantallaChica) {
-    .wrapQS {
+    .QSwrap {
         max-width: 400px;
+    }
+    .reverse {
+        flex-direction: column;
     }
 }

@@ -19,7 +19,16 @@
    max-width: 100%;
    overflow-x: hidden;
    z-index: -1;
-   height: 100%;
+   
+}
+.colConte{
+    display: grid;
+    grid-template-areas: "head"
+                         "main"
+                         "foot"
+}
+main {
+    grid-area: main;
 }
 .wrap{
     @include glassmorphism;
@@ -51,7 +60,7 @@
     text-transform: uppercase;
     text-align: justify;
     color: #FFF;
-    margin: 3vh;
+    margin: 3rem auto;
     text-align: center;
     text-shadow: 1px 1px 10px $grisClaro;
     font-weight: 600;
@@ -59,11 +68,7 @@
 .titulo {
     @include glassmorphism;
     padding: 1rem;
-    text-transform: uppercase;
-    color: #FFF;
-    margin: 10vh 25%;
-    text-align: center;
-    max-height: 250px;
+    max-width: 700px;
     a {
         text-decoration: none;
         color: $mostaza;

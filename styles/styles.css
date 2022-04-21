@@ -83,6 +83,9 @@
     .gridIndex #cream {
       display: none; } }
 
+footer {
+  grid-area: foot; }
+
 .pie {
   background-color: #000;
   color: #ABAD9A;
@@ -122,6 +125,9 @@
   .bi :hover {
     color: #BFE028;
     transition: 0.2s ease-out; }
+
+header {
+  grid-area: head; }
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.6);
@@ -239,7 +245,7 @@ fieldset div select {
   font-weight: 600;
   box-shadow: -2vh 2vh #222; }
 
-.wrapQS {
+.QSwrap {
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -251,12 +257,12 @@ fieldset div select {
   max-width: 60rem;
   align-items: center;
   justify-content: space-between; }
-  .wrapQS p {
+  .QSwrap p {
     width: 30%;
     margin: auto;
     text-align: center;
     font-weight: 600; }
-  .wrapQS img {
+  .QSwrap img {
     border-radius: 3%;
     border: 1px solid rgba(255, 255, 255, 0.4);
     height: auto;
@@ -267,22 +273,22 @@ fieldset div select {
   flex-direction: row-reverse; }
 
 @media (max-width: 992px) {
-  .wrapQS {
+  .QSwrap {
     flex-direction: column-reverse;
     padding: 1em;
     margin: 3rem auto;
     max-width: 500px; }
-    .wrapQS img {
+    .QSwrap img {
       width: 100%; }
-    .wrapQS p {
+    .QSwrap p {
       width: 100%;
-      font-weight: 500; }
-  .reverse {
-    flex-direction: column; } }
+      font-weight: 500; } }
 
 @media (max-width: 768px) {
-  .wrapQS {
-    max-width: 400px; } }
+  .QSwrap {
+    max-width: 400px; }
+  .reverse {
+    flex-direction: column; } }
 
 .grilla3 {
   display: flex;
@@ -301,7 +307,6 @@ fieldset div select {
   border-radius: 10px;
   backdrop-filter: blur(1px);
   max-width: 20rem;
-  max-height: auto;
   margin: 2rem;
   padding: 1rem; }
   .modDisWrap img {
@@ -328,8 +333,14 @@ fieldset div select {
   background-image: url(../images/trbien.png);
   max-width: 100%;
   overflow-x: hidden;
-  z-index: -1;
-  height: 100%; }
+  z-index: -1; }
+
+.colConte {
+  display: grid;
+  grid-template-areas: "head" "main" "foot"; }
+
+main {
+  grid-area: main; }
 
 .wrap {
   background-color: rgba(0, 0, 0, 0.4);
@@ -363,7 +374,7 @@ fieldset div select {
   text-transform: uppercase;
   text-align: justify;
   color: #FFF;
-  margin: 3vh;
+  margin: 3rem auto;
   text-align: center;
   text-shadow: 1px 1px 10px #ABAD9A;
   font-weight: 600; }
@@ -375,11 +386,7 @@ fieldset div select {
   border-radius: 10px;
   backdrop-filter: blur(1px);
   padding: 1rem;
-  text-transform: uppercase;
-  color: #FFF;
-  margin: 10vh 25%;
-  text-align: center;
-  max-height: 250px; }
+  max-width: 700px; }
   .titulo a {
     text-decoration: none;
     color: #BFE028; }
