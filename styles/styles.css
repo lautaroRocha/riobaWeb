@@ -209,33 +209,37 @@ header {
     border-radius: 10px;
     backdrop-filter: blur(1px); }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .filaFotos {
     grid-template-columns: 1fr;
     padding: 1rem; } }
 
 .fila {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center; }
   .fila .titulo {
-    width: 20%;
+    max-width: 300px;
     height: fit-content;
     padding: 2rem; }
   .fila .wrap {
-    width: 40%; }
+    max-width: fit-content; }
+  .fila .reversa {
+    order: -1; }
 
 @media (max-width: 992px) {
   .fila {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+    grid-template-columns: 1fr;
+    align-items: center; }
     .fila .titulo {
       width: 100%; }
     .fila .wrap {
       width: fit-content;
       padding: 2rem;
       margin: 0 auto;
-      text-align: center; } }
+      text-align: center; }
+    .fila .reversa {
+      order: 1; } }
 
 .colCon {
   display: flex;

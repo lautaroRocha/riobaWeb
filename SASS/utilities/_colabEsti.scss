@@ -42,29 +42,32 @@
     @include glassmorphism
     }
 }
-@media (max-width: $pantallaMedia) {
+@media (max-width: $pantallaChica) {
     .filaFotos {
         grid-template-columns: 1fr;
         padding: 1rem;
     }
 }
 .fila {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     .titulo {
-        width: 20%;
+        max-width: 300px;
         height: fit-content;
         padding: 2rem;
     }
     .wrap {
-        width: 40%;
+        max-width: fit-content;
+    }
+    .reversa {
+        order: -1;
     }
 }
 @media (max-width: $pantallaMedia) {
     .fila {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         align-items: center;
-        justify-content: center;
         .titulo {
             width: 100%;
         }
@@ -74,5 +77,8 @@
             margin: 0 auto;
             text-align: center;
         }
+        .reversa {
+            order: 1;
+        } 
     }
 }
