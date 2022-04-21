@@ -21,12 +21,6 @@
    z-index: -1;
    
 }
-.colConte{
-    display: grid;
-    grid-template-areas: "head"
-                         "main"
-                         "foot"
-}
 main {
     grid-area: main;
 }
@@ -58,7 +52,6 @@ main {
 }
 .texto {
     text-transform: uppercase;
-    text-align: justify;
     color: #FFF;
     margin: 3rem auto;
     text-align: center;

@@ -172,37 +172,69 @@ header {
   height: auto;
   overflow: hidden; }
 
-.wrapCaru {
-  background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: -4px 4px 10px black;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  backdrop-filter: blur(1px);
-  padding: 5vh;
-  width: fit-content;
-  gap: 1em;
-  overflow: hidden; }
-
 .bg-light {
-  background-color: rgba(255, 255, 255, 0.3) !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
   box-shadow: -4px 4px 10px black;
   border: 1px solid #ABAD9A;
-  border-radius: 10px; }
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: 400; }
   .bg-light span {
-    font-weight: 400; }
+    color: #000; }
+
+@media (max-width: 992px) {
+  .bg-light {
+    font-size: 2rem;
+    font-weight: 700; } }
 
 .bg-dark {
   background-color: rgba(0, 0, 0, 0.4) !important; }
 
-.rounded {
-  border-radius: 3% !important; }
+.filaTitu {
+  display: flex;
+  justify-content: center;
+  justify-items: center; }
 
-.warning {
-  color: #BFE028; }
+.filaFotos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem auto; }
+  .filaFotos img {
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: -4px 4px 10px black;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    backdrop-filter: blur(1px); }
 
-.container p a:hover {
-  color: #BFE028;
-  text-shadow: #fff 2px 2px 10px; }
+@media (max-width: 992px) {
+  .filaFotos {
+    grid-template-columns: 1fr;
+    padding: 1rem; } }
+
+.fila {
+  display: flex;
+  align-items: center; }
+  .fila .titulo {
+    width: 20%;
+    height: fit-content;
+    padding: 2rem; }
+  .fila .wrap {
+    width: 40%; }
+
+@media (max-width: 992px) {
+  .fila {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .fila .titulo {
+      width: 100%; }
+    .fila .wrap {
+      width: fit-content;
+      padding: 2rem;
+      margin: 0 auto;
+      text-align: center; } }
 
 .colCon {
   display: flex;
@@ -335,10 +367,6 @@ fieldset div select {
   overflow-x: hidden;
   z-index: -1; }
 
-.colConte {
-  display: grid;
-  grid-template-areas: "head" "main" "foot"; }
-
 main {
   grid-area: main; }
 
@@ -372,7 +400,6 @@ main {
 
 .texto {
   text-transform: uppercase;
-  text-align: justify;
   color: #FFF;
   margin: 3rem auto;
   text-align: center;
