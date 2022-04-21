@@ -228,7 +228,7 @@ fieldset input {
 
 fieldset input,
 fieldset textarea,
-fieldset select {
+fieldset label {
   background-color: #fff; }
 
 .boton {
@@ -338,7 +338,7 @@ fieldset select {
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   backdrop-filter: blur(1px);
-  margin: 3em auto;
+  margin: 3em auto 0 auto;
   width: fit-content;
   max-width: 60rem;
   padding: 2em;
