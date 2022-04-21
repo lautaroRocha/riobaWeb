@@ -2,12 +2,15 @@
     background-color: $transpa;
     box-shadow: -4px 4px 10px rgb(0, 0, 0,);
     border-bottom: 1px solid $grisOscuro;
-    width: 100vw;;
+    width: 100vw;
+    max-width: 1500px;
+    margin: 0 auto;
     .logo {
         width: 15rem;
         height: auto; 
         &:hover{
             filter: drop-shadow(-1px 0px 5px $grisClaro);
+            transition:0.5s ease-out;
         }
     }  
     img {
@@ -24,16 +27,24 @@
         &:hover{
             color: $mostaza !important;
             filter: drop-shadow(1px 0px 5px $grisTenue);
-
+            transition:0.5s ease-out;
         }
     }
     .navbar-toggler{
-        background-color: rgba(255, 255, 255, .5);
         font-size: 1em;
+        margin-right: 7%;
     } 
 }
-
+  
 @media (max-width: $pantallaChica){
+    .navbar {
+        .nav-link {
+            font-size: 1rem;
+        }
+    }
+   
+}
+@media (min-width: 1300px){
     .navbar {
         .nav-link {
             font-size: 1rem;

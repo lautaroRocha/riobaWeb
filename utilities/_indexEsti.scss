@@ -14,53 +14,53 @@
                           "patch patch patch patch bolso bolso cream cream";
                          
     gap:1em;
-}
-.gridIndex img{
+     img{
+    @include imagen;    
     object-fit: cover;
     max-width: 100%;
     max-height: 100%;
-    border-radius: 3%;
-}
+    }
     #soyT{
-    text-align: center;
-    grid-area:soy;   
-    font-size:1.7em;
-    font-weight: 500;
-    margin: 0px;
-}
-    #patch{
-    color: #FFF;
-    text-transform: uppercase;
-    grid-area:patch;
-    text-align: center;
-    font-size: 1.7rem;
-    font-weight: 300;
-}
-    #buzoA {
-    grid-area: buzo;
-}
-    #chomba {
-    grid-area:chomba;
-    width: 100%;
-}
-    #bolso {
-    grid-area:bolso;
-    height: 100%;
-}
-    #cream {
-    grid-area:cream;
-    height: 100%;
-    width: 100%;
-}
-    #atras {
-    grid-area:atras;
-    width: 100%;
-}
+        text-align: center;
+        grid-area:soy;   
+        font-size:1.7em;
+        font-weight: 500;
+        margin: 0px;
+    }
+        #patch{
+        color: #FFF;
+        text-transform: uppercase;
+        grid-area:patch;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+        #buzoA {
+        grid-area: buzo;
+    }
+        #chomba {
+        grid-area:chomba;
+        width: 100%;
+    }
+        #bolso {
+        grid-area:bolso;
+        height: 100%;
+    }
+        #cream {
+        grid-area:cream;
+        height: 100%;
+        width: 100%;
+    }
+        #atras {
+        grid-area:atras;
+        width: 100%;
+    }
+}   
 @media (max-width: 992px) {
     .gridIndex { 
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(1, 2fr);
-    }
+    
     #buzoA { 
         grid-area: 1 / 1 / 7 / 3; 
         height: 100%; 
@@ -89,22 +89,22 @@
     height: 100%; 
     width: auto;}
 }
+}
 @media (max-width: 576px) {
     .gridIndex {
         display: flex;
         flex-direction: column-reverse;
-    }
-    #chomba {
-        display: none;
-    }
-    #buzoA {
-        order:1;
-    }
-    #soyT {
-        order: 2;
-    }
-    #cream {
-        display:none;
-    }
+        #chomba {
+            display: none;
+        }
+        #buzoA {
+            order:1;
+        }
+        #soyT {
+            order: 2;
+        }
+        #cream {
+            display:none;
+        }
+    }    
 }
-

@@ -6,38 +6,51 @@
     max-width: 60rem;
     align-items: center;
     justify-content: space-between;
+
     p {
         width: 30%;
         margin: auto;
         text-align: center;
-        font-weight:600;
+        font-weight: 600;
     }
+
     img {
+        @include imagen;
         height: auto;
         width: 50%;
         margin: 1rem;
-        border-radius: 3%;
-        border: 1px solid rgba(255, 255, 255, .4);
     }
 
 }
+
 .reverse {
     flex-direction: row-reverse;
 }
+
 @media (max-width:$pantallaMedia) {
     .wrapQS {
         flex-direction: column-reverse;
         padding: 1em;
-        margin: 3rem;
+        margin: 3rem auto;
+        max-width: 500px;
+
         img {
             width: 100%;
         }
+
         p {
             width: 100%;
             font-weight: 500;
         }
     }
+
     .reverse {
         flex-direction: column;
+    }
+}
+
+@media (max-width:$pantallaChica) {
+    .wrapQS {
+        max-width: 400px;
     }
 }

@@ -24,3 +24,7 @@ $pantallaMedia: 992px;
     border-radius: 10px;
     backdrop-filter: blur(1px);
 }
+@mixin imagen {
+    border-radius: 3%;
+    border: 1px solid rgba(255, 255, 255, .4);
+}

@@ -9,21 +9,14 @@
     padding: 5vh;
     width:fit-content;
     gap:1em;
-    overflow: hidden;    
-    img {
-        border: 1px solid rgba(255, 255, 255, .4);
-    }  
-    video {
-        border: 1px solid rgba(255, 255, 255, .4);
-    }            
+    overflow: hidden;               
 }
-.margen {
-    margin-top:25vh;
-}
+
 .bg-light{
     background-color: rgba(255, 255, 255, .3) !important;
     box-shadow: -4px 4px 10px rgb(0, 0, 0,);
     border: 1px solid $grisClaro;
+    border-radius: 10px;
     span {
         font-weight: 400;
     }

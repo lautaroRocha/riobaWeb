@@ -11,16 +11,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Red Hat Mono', monospace;}
+    font-family: 'Red Hat Mono', monospace;
+}
 .wrapTotal {
    background-color: $grisClaro; 
    background-image: url(../images/trbien.png);
    max-width: 100%;
    overflow-x: hidden;
    z-index: -1;
-   height: 100vh;
+   height: 100%;
 }
-
 .wrap{
     @include glassmorphism;
     margin:3em auto;
@@ -29,6 +29,23 @@
     padding: 2em;
     display: flex;                                   
     max-height: 28rem;
+    img{
+            @include imagen;
+    }
+}
+@media (max-width: $pantallaMedia) {
+    .wrap {
+        height: auto;
+        padding-left: 4em;
+        max-height:fit-content;
+        margin: 3rem;
+    }
+}
+@media (max-width: $pantallaXChica){
+    .wrap {
+        margin: 10%;
+        padding:1em;
+    }
 }
 .texto {
     text-transform: uppercase;
@@ -37,6 +54,7 @@
     margin: 3vh;
     text-align: center;
     text-shadow: 1px 1px 10px $grisClaro;
+    font-weight: 600;
 }
 .titulo {
     @include glassmorphism;
@@ -45,7 +63,6 @@
     color: #FFF;
     margin: 10vh 25%;
     text-align: center;
-    font-weight: 600;
     max-height: 250px;
     a {
         text-decoration: none;
@@ -66,18 +83,4 @@
 }
 .sombraTenue {
     text-shadow:$mostaza 2px 2px 5px;
-}
-@media (max-width: $pantallaMedia) {
-    .wrap {
-        height: auto;
-        padding-left: 4em;
-        max-height:fit-content;
-        margin: 3rem;
-    }
-}
-@media (max-width: $pantallaXChica){
-    .wrap {
-        margin: 10%;
-        padding:1em;
-    }
 }
