@@ -201,8 +201,7 @@
 .colCon {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 2rem; }
+  align-items: center; }
 
 .contacWrap {
   background-color: rgba(0, 0, 0, 0.4);
@@ -228,7 +227,7 @@ fieldset input {
 
 fieldset input,
 fieldset textarea,
-fieldset label {
+fieldset div select {
   background-color: #fff; }
 
 .boton {
@@ -338,7 +337,7 @@ fieldset label {
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   backdrop-filter: blur(1px);
-  margin: 3em auto 0 auto;
+  margin: 3em auto 0em auto;
   width: fit-content;
   max-width: 60rem;
   padding: 2em;

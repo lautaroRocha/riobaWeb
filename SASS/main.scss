@@ -23,7 +23,7 @@
 }
 .wrap{
     @include glassmorphism;
-    margin:3em auto 0 auto;
+    margin:3em auto 0em auto;
     width: fit-content;
     max-width: 60rem;
     padding: 2em;
