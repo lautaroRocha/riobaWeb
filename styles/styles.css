@@ -227,7 +227,8 @@ fieldset input {
   margin-top: 1em; }
 
 fieldset input,
-fieldset textarea {
+fieldset textarea,
+fieldset select {
   background-color: #fff; }
 
 .boton {
