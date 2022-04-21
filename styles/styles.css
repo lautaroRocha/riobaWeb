@@ -179,7 +179,8 @@ header {
   border-radius: 10px;
   padding: 1rem;
   font-size: 3rem;
-  font-weight: 400; }
+  font-weight: 400;
+  text-align: center; }
   .bg-light span {
     color: #000; }
 
