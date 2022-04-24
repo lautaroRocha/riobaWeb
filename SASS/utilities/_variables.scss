@@ -1,11 +1,3 @@
-
-/*PALETA
-#BFE028   verdeMostaza
-#464838   grisOscuro
-#ABAD9A   grisClaro
-#00F7DA   cyanClaro
-#00BCA3   cyanOscuro*/
-
 $grisOscuro: #464838;
 $grisClaro: #ABAD9A;
 $grisTenue :rgba(255, 255, 255, .3);
@@ -13,18 +5,10 @@ $mostaza: #BFE028;
 $transpa: rgba(0,0,0,.6);
 $transpaClaro: rgba(0,0,0,.4);
 
+
 $pantallaXChica: 576px;
 $pantallaChica: 768px; 
 $pantallaMedia: 992px;
 
-@mixin glassmorphism {
-    background-color: $transpaClaro;
-    box-shadow: -4px 4px 10px rgb(0, 0, 0,);
-    border: 1px solid rgba(255, 255, 255, .4);
-    border-radius: 10px;
-    backdrop-filter: blur(1px);
-}
-@mixin imagen {
-    border-radius: 3%;
-    border: 1px solid rgba(255, 255, 255, .4);
-}
+
+

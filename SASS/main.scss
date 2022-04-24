@@ -1,39 +1,36 @@
 @import "utilities/variables"; 
-@import "utilities/indexEsti"; 
-@import "utilities/footerEsti"; 
-@import "utilities/headerEsti"; 
-@import "utilities/colabEsti"; 
-@import "utilities/contactEsti"; 
-@import "utilities/QSEsti"; 
-@import "utilities/modDisEsti"; 
-
+@import "utilities/map"; 
+@import "utilities/mixin"; 
+@import "utilities/extend"; 
+@import "utilities/index"; 
+@import "utilities/footer"; 
+@import "utilities/header"; 
+@import "utilities/colab"; 
+@import "utilities/contact"; 
+@import "utilities/QS"; 
+@import "utilities/modDis"; 
 :root {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Red Hat Mono', monospace;
+    scroll-behavior: smooth;
 }
-.wrapTotal {
+.wrap-total {
    background-color: $grisClaro; 
    background-image: url(../images/trbien.png);
    max-width: 100%;
    overflow-x: hidden;
    z-index: -1;
-   
-}
-main {
-    grid-area: main;
 }
 .wrap{
     @include glassmorphism;
-    margin:3em auto 0em auto;
-    width: fit-content;
+    @extend %container;
+    margin-top:3em;
     max-width: 60rem;
-    padding: 2em;
-    display: flex;                                   
     max-height: 28rem;
     img{
-            @include imagen;
+        @include imagen;
     }
 }
 @media (max-width: $pantallaMedia) {
@@ -67,18 +64,15 @@ main {
         color: $mostaza;
         &:hover {
             filter: drop-shadow(1px 0px 5px $grisTenue);
+        }
     }
-}
 }
 .sombra {
     text-shadow:$mostaza 2px 2px; 
 }
-.sombraInvertida {
+.sombra-invertida {
     text-shadow:$mostaza 2px -2px;
 } 
-.display-7 {
-    font-size: 2rem;    
-}
-.sombraTenue {
+.sombra-tenue {
     text-shadow:$mostaza 2px 2px 5px;
 }

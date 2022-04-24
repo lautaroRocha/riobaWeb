@@ -1,0 +1,110 @@
+.grid-index {
+    display: grid;
+    grid-template-columns: repeat (10, 1fr);
+    grid-template-rows: repeat(9, 1fr) .5fr;
+    grid-template-areas:  "buzo buzo chomba chomba soy soy soy soy"
+                          "buzo buzo chomba chomba soy soy soy soy"
+                          "buzo buzo chomba chomba atras atras cream cream"
+                          "buzo buzo chomba chomba atras atras cream cream"
+                          "buzo buzo chomba chomba atras atras cream cream"
+                          "buzo buzo chomba chomba atras atras cream cream"
+                          "buzo buzo chomba chomba atras atras cream cream"
+                          "buzo buzo chomba chomba bolso bolso cream cream"
+                          "buzo buzo chomba chomba bolso bolso cream cream"
+                          "patch patch patch patch bolso bolso cream cream";
+                         
+    gap:1em;
+     img{
+    @include imagen;    
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    }
+    #soyT{
+        text-align: center;
+        grid-area:soy;   
+        font-size:1.7em;
+        font-weight: 500;
+        margin: 0px;
+    }
+        #patch{
+        color: #FFF;
+        text-transform: uppercase;
+        grid-area:patch;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+        #buzoA {
+        grid-area: buzo;
+    }
+        #chomba {
+        grid-area:chomba;
+        width: 100%;
+    }
+        #bolso {
+        grid-area:bolso;
+        height: 100%;
+    }
+        #cream {
+        grid-area:cream;
+        height: 100%;
+        width: 100%;
+    }
+        #atras {
+        grid-area:atras;
+        width: 100%;
+    }
+}   
+@media (max-width: 992px) {
+    .grid-index { 
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1, 2fr);
+    
+    #buzoA { 
+        grid-area: 1 / 1 / 7 / 3; 
+        height: 100%; 
+        width: auto;
+    }
+    #soyT { 
+        grid-area: 1 / 3 / 4 / 6; 
+        font-size: 2em;
+        padding: 0;
+    }
+    #atras { 
+    grid-area: 4 / 3 / 7 / 6; 
+    } 
+    #cream {
+    grid-area: 10/1/12/4;
+    }
+    #bolso {
+    display: none;
+    }
+    #patch {
+    grid-area: 7 / 1 / 10 / 6;
+
+    }
+    #chomba {
+    grid-area: 10/4/12/6;
+    height: 100%; 
+    width: auto;}
+}
+}
+@media (max-width: 576px) {
+    .grid-index {
+        display: flex;
+        flex-direction: column-reverse;
+        #chomba {
+            display: none;
+        }
+        #buzoA {
+            order:1;
+        }
+        #soyT {
+            order: 2;
+        }
+        #cream {
+            display:none;
+        }
+    }    
+}
