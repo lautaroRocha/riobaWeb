@@ -34,9 +34,8 @@
     gap: 2rem;
     margin: 2rem auto;
     img {
-    @include glassmorphism;
-    @include imagen;
-   
+    @extend %glassmorphism;
+    @extend %imagen;
     }
 }
 @media (max-width: $pantallaChica) {

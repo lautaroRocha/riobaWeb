@@ -1,6 +1,6 @@
 .contac-wrap {
-    @include glassmorphism;
-    @extend %container;
+    @include flex (flex, column, nowrap,center, center, 2rem);
+    @extend %glassmorphism;
     margin-top: 3rem;
     align-items: center;
     caret-color: map-get($paleta, #{mosta});

@@ -1,7 +1,7 @@
 @import "utilities/variables"; 
 @import "utilities/map"; 
-@import "utilities/mixin"; 
 @import "utilities/extend"; 
+@import "utilities/mixin"; 
 @import "utilities/index"; 
 @import "utilities/footer"; 
 @import "utilities/header"; 
@@ -24,13 +24,13 @@
    z-index: -1;
 }
 .wrap{
-    @include glassmorphism;
-    @extend %container;
+    @include flex (flex, row, nowrap, center, center, 2em);
+    @extend %glassmorphism;
     margin-top:3em;
     max-width: 60rem;
     max-height: 28rem;
     img{
-        @include imagen;
+        @extend %imagen;
     }
 }
 @media (max-width: $pantallaMedia) {
@@ -56,7 +56,7 @@
     font-weight: 600;
 }
 .titulo {
-    @include glassmorphism;
+    @extend %glassmorphism;
     padding: 1rem;
     max-width: 700px;
     a {

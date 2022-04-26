@@ -1,6 +1,6 @@
 .qs-wrap {
-    @include glassmorphism;
-    @extend %container; 
+    @include flex (flex, row, nowrap, space-between, center, 2em); 
+    @extend %glassmorphism;
     margin-top: 3em;
     max-width: 60rem;
     align-items: center;
@@ -12,7 +12,7 @@
         font-weight: 600;
     }
     img {
-        @include imagen;
+        @extend %imagen;
         height: auto;
         width: 50%;
         margin: 1rem;

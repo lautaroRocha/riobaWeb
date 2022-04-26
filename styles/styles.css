@@ -1,10 +1,15 @@
-.contac-wrap, .qs-wrap, .mod-dis-wrap, .wrap {
-  width: fit-content;
-  height: fit-content;
-  padding: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex; }
+.fila-fotos img, .contac-wrap, .qs-wrap, .mod-dis-wrap, .wrap, .titulo {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: -4px 4px 10px black;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  backdrop-filter: blur(1px); }
+
+.grid-index img, .fila-fotos img, .qs-wrap img, .mod-dis-wrap img, .wrap img {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  width: 100%;
+  height: auto; }
 
 .grid-index {
   display: grid;
@@ -13,10 +18,6 @@
   grid-template-areas: "buzo buzo chomba chomba soy soy soy soy" "buzo buzo chomba chomba soy soy soy soy" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba bolso bolso cream cream" "buzo buzo chomba chomba bolso bolso cream cream" "patch patch patch patch bolso bolso cream cream";
   gap: 1em; }
   .grid-index img {
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    width: 100%;
-    height: auto;
     object-fit: cover;
     max-width: 100%;
     max-height: 100%; }
@@ -197,16 +198,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin: 2rem auto; }
-  .fila-fotos img {
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: -4px 4px 10px black;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 10px;
-    backdrop-filter: blur(1px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    width: 100%;
-    height: auto; }
 
 @media (max-width: 768px) {
   .fila-fotos {
@@ -241,11 +232,15 @@
       order: 1; } }
 
 .contac-wrap {
-  background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: -4px 4px 10px black;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  backdrop-filter: blur(1px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
   margin-top: 3rem;
   align-items: center;
   caret-color: #BFE028; }
@@ -269,11 +264,15 @@ fieldset div select {
   box-shadow: -2vh 2vh #222; }
 
 .qs-wrap {
-  background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: -4px 4px 10px black;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  backdrop-filter: blur(1px);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
   margin-top: 3em;
   max-width: 60rem;
   align-items: center;
@@ -284,10 +283,6 @@ fieldset div select {
     text-align: center;
     font-weight: 600; }
   .qs-wrap img {
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    width: 100%;
-    height: auto;
     height: auto;
     width: 50%;
     margin: 1rem; }
@@ -316,37 +311,32 @@ fieldset div select {
 .grilla3 {
   display: flex;
   place-items: center;
+  width: fit-content;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 3rem; }
+  gap: 3em; }
 
 .mod-dis-wrap {
-  background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: -4px 4px 10px black;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  backdrop-filter: blur(1px);
-  flex-direction: column;
-  text-align: center;
-  max-width: 20rem;
-  margin-top: 2rem; }
-  .mod-dis-wrap img {
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    width: 100%;
-    height: auto;
-    height: 80%; }
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+  max-width: 20rem; }
 
 .display-7 {
   font-size: 2rem; }
 
 @media (max-width: 992px) {
   .grilla3 {
-    flex-direction: column; }
-  .mod-dis-wrap {
-    width: 70vw; }
-    .mod-dis-wrap img {
-      height: 60%; } }
+    flex-direction: column;
+    gap: 1.5em; }
+  .mod-dis-wrap img {
+    height: 60%; } }
 
 :root {
   padding: 0;
@@ -363,19 +353,18 @@ fieldset div select {
   z-index: -1; }
 
 .wrap {
-  background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: -4px 4px 10px black;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  backdrop-filter: blur(1px);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
   margin-top: 3em;
   max-width: 60rem;
   max-height: 28rem; }
-  .wrap img {
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    width: 100%;
-    height: auto; }
 
 @media (max-width: 992px) {
   .wrap {
@@ -398,11 +387,6 @@ fieldset div select {
   font-weight: 600; }
 
 .titulo {
-  background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: -4px 4px 10px black;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  backdrop-filter: blur(1px);
   padding: 1rem;
   max-width: 700px; }
   .titulo a {
