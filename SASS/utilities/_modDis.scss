@@ -1,0 +1,30 @@
+.grilla3 {
+    display: flex;
+    place-items: center;
+    width: fit-content;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3em;
+}
+.mod-dis-wrap {
+    @include flex (flex, column, nowrap, center, center, 2em);
+    @extend %glassmorphism;
+    max-width: 20rem;
+    img {
+        @extend %imagen;
+    }
+}
+.display-7 {
+    font-size: 2rem;    
+}
+@media (max-width: $pantallaMedia){
+    .grilla3 {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+    .mod-dis-wrap {
+        img {
+            height: 60%;
+        }
+    }
+}

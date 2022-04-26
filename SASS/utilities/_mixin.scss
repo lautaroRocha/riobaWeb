@@ -1,0 +1,11 @@
+@mixin flex ($dis, $dir, $env, $jus, $ali, $pad){
+    display: $dis;
+    flex-flow: $dir $env;
+    justify-content: $jus;
+    align-content: $ali;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: $pad;
+}

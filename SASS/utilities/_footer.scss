@@ -1,0 +1,47 @@
+.pie {
+    background-color:#000;
+    color: map-get($paleta, grisCla);
+    width: 100vw;
+    padding: 1rem;
+    bottom: 0;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:1rem;
+    .iconos  {
+        display: flex;
+        justify-items: center;
+        gap:2rem;
+        padding-top: 2rem;
+    }
+    .legal {
+        display: flex;
+        flex-direction: column;
+    }
+    a {
+        font-weight: 600;
+        margin: 0% 3%;
+        color: map-get($paleta, grisCla);
+        &:hover{
+            color: map-get($paleta, mosta);
+            transition:0.2s ease-out;
+        }
+    }
+}
+@media (max-width: $pantallaMedia) {
+    .pie {
+    .iconos {
+        width: 100vw;
+        justify-content: space-evenly;}
+    }
+}
+.bi {
+    height: 2em;
+    width: auto;
+    :hover {
+        color: map-get($paleta, mosta);
+        transition:0.2s ease-out;
+    }
+}

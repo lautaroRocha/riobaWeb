@@ -1,0 +1,28 @@
+.contac-wrap {
+    @include flex (flex, column, nowrap,center, center, 2rem);
+    @extend %glassmorphism;
+    margin-top: 3rem;
+    align-items: center;
+    caret-color: map-get($paleta, #{mosta});
+}
+fieldset {
+    label,
+    input {
+        margin-top: 1em;
+    }
+
+    input,
+    textarea,
+    div select{
+        background-color: #fff;
+    }
+}
+.boton {
+    margin: 2em;
+    background-color: map-get( $paleta,mosta );
+    color: #000;
+    text-transform: uppercase;
+    padding: .5em;
+    font-weight: 600;
+    box-shadow: -2vh 2vh #222;
+}

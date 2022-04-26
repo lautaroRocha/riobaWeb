@@ -1,0 +1,13 @@
+%glassmorphism {
+    background-color: $transpaClaro;
+    box-shadow: -4px 4px 10px rgb(0, 0, 0,);
+    border: 1px solid rgba(255, 255, 255, .4);
+    border-radius: 10px;
+    backdrop-filter: blur(1px);
+}
+%imagen {
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, .4);
+    width: 100%;
+    height: auto;
+}

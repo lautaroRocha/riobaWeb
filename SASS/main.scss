@@ -1,0 +1,78 @@
+@import "utilities/variables"; 
+@import "utilities/map"; 
+@import "utilities/extend"; 
+@import "utilities/mixin"; 
+@import "utilities/index"; 
+@import "utilities/footer"; 
+@import "utilities/header"; 
+@import "utilities/colab"; 
+@import "utilities/contact"; 
+@import "utilities/QS"; 
+@import "utilities/modDis"; 
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Mono', monospace;
+    scroll-behavior: smooth;
+}
+.wrap-total {
+   background-color: $grisClaro; 
+   background-image: url(../images/trbien.png);
+   max-width: 100%;
+   overflow-x: hidden;
+   z-index: -1;
+}
+.wrap{
+    @include flex (flex, row, nowrap, center, center, 2em);
+    @extend %glassmorphism;
+    margin-top:3em;
+    max-width: 60rem;
+    max-height: 28rem;
+    img{
+        @extend %imagen;
+    }
+}
+@media (max-width: $pantallaMedia) {
+    .wrap {
+        height: auto;
+        padding-left: 4em;
+        max-height:fit-content;
+        margin: 3rem;
+    }
+}
+@media (max-width: $pantallaXChica){
+    .wrap {
+        margin: 10%;
+        padding:1em;
+    }
+}
+.texto {
+    text-transform: uppercase;
+    color: #FFF;
+    margin: 3rem auto;
+    text-align: center;
+    text-shadow: 1px 1px 10px $grisClaro;
+    font-weight: 600;
+}
+.titulo {
+    @extend %glassmorphism;
+    padding: 1rem;
+    max-width: 700px;
+    a {
+        text-decoration: none;
+        color: $mostaza;
+        &:hover {
+            filter: drop-shadow(1px 0px 5px $grisTenue);
+        }
+    }
+}
+.sombra {
+    text-shadow:$mostaza 2px 2px; 
+}
+.sombra-invertida {
+    text-shadow:$mostaza 2px -2px;
+} 
+.sombra-tenue {
+    text-shadow:$mostaza 2px 2px 5px;
+}
