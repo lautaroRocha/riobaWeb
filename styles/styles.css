@@ -3,7 +3,7 @@
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
-  backdrop-filter: blur(1px); }
+  backdrop-filter: blur(3px); }
 
 .grid-index img, .fila-fotos img, .qs-wrap img, .mod-dis-wrap img, .wrap img {
   border-radius: 10px;
@@ -191,13 +191,15 @@
 .fila-titu {
   display: flex;
   justify-content: center;
-  justify-items: center; }
+  justify-items: center;
+  width: 90vw; }
 
 .fila-fotos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin: 2rem auto; }
+  margin: 2rem auto;
+  width: 90vw; }
 
 @media (max-width: 768px) {
   .fila-fotos {
@@ -207,7 +209,9 @@
 .fila {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center; }
+  align-items: center;
+  width: 90vw;
+  margin: 2rem auto; }
   .fila .titulo {
     max-width: 300px;
     height: fit-content;
@@ -346,8 +350,12 @@ fieldset div select {
   scroll-behavior: smooth; }
 
 .wrap-total {
-  background-color: #ABAD9A;
-  background-image: url(../images/trbien.png);
+  background: #464838;
+  background: url(../images/trbiendos.png), linear-gradient(340deg, #464838 21%, #87887e 99%);
+  /*background-image: url(../images/trbien.png);
+   background-image: ;
+   background: rgb(70,72,56);
+background: ;*/
   max-width: 100%;
   overflow-x: hidden;
   z-index: -1; }

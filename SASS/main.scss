@@ -17,8 +17,12 @@
     scroll-behavior: smooth;
 }
 .wrap-total {
-   background-color: $grisClaro; 
-   background-image: url(../images/trbien.png);
+   background: rgb(70,72,56);
+   background: url(../images/trbiendos.png), linear-gradient(340deg, rgba(70,72,56,1) 21%, rgba(135,136,126,1) 99%);
+   /*background-image: url(../images/trbien.png);
+   background-image: ;
+   background: rgb(70,72,56);
+background: ;*/
    max-width: 100%;
    overflow-x: hidden;
    z-index: -1;

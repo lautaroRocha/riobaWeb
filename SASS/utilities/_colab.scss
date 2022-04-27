@@ -27,12 +27,15 @@
     display: flex;
     justify-content: center;
     justify-items: center;
+    width: 90vw;
+
 }
 .fila-fotos {
     display: grid;
     grid-template-columns:repeat(3,1fr);
     gap: 2rem;
     margin: 2rem auto;
+    width: 90vw;
     img {
     @extend %glassmorphism;
     @extend %imagen;
@@ -48,6 +51,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    width: 90vw;
+    margin: 2rem auto;
+
     .titulo {
         max-width: 300px;
         height: fit-content;
