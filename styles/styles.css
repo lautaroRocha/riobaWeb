@@ -192,7 +192,8 @@
   display: flex;
   justify-content: center;
   justify-items: center;
-  width: 90vw; }
+  width: 90vw;
+  margin: 2rem auto; }
 
 .fila-fotos {
   display: grid;
