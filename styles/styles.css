@@ -1,5 +1,5 @@
 .fila-fotos img, .contac-wrap, .qs-wrap, .mod-dis-wrap, .wrap, .titulo {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
@@ -24,16 +24,19 @@
   .grid-index #soyT {
     text-align: center;
     grid-area: soy;
-    font-size: 1.7em;
     font-weight: 500;
-    margin: 0px; }
+    margin: auto;
+    font-size: 2rem;
+    font-weight: 700; }
   .grid-index #patch {
     color: #FFF;
     text-transform: uppercase;
     grid-area: patch;
     text-align: center;
     font-size: 1.5rem;
-    font-weight: 300; }
+    font-weight: 500;
+    margin: auto;
+    letter-spacing: .5rem; }
   .grid-index #buzoA {
     grid-area: buzo; }
   .grid-index #chomba {
@@ -55,21 +58,22 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 2fr); }
     .grid-index #buzoA {
-      grid-area: 1 / 1 / 7 / 3;
-      height: 100%;
-      width: auto; }
+      grid-area: 1 / 1 / 6 / 3;
+      height: 100%; }
     .grid-index #soyT {
       grid-area: 1 / 3 / 4 / 6;
-      font-size: 2em;
-      padding: 0; }
+      font-size: 2rem;
+      text-align: right; }
     .grid-index #atras {
-      grid-area: 4 / 3 / 7 / 6; }
+      grid-area: 4 / 3 / 6 / 6; }
     .grid-index #cream {
       grid-area: 10/1/12/4; }
     .grid-index #bolso {
       display: none; }
     .grid-index #patch {
-      grid-area: 7 / 1 / 10 / 6; }
+      grid-area: 6 / 1 / 10 / 6;
+      letter-spacing: 0px;
+      font-size: 1.5rem; }
     .grid-index #chomba {
       grid-area: 10/4/12/6;
       height: 100%;
@@ -113,7 +117,7 @@
     margin: 0% 3%;
     color: #ABAD9A; }
     .pie a:hover {
-      color: #BFE028;
+      color: #ace707;
       transition: 0.2s ease-out; }
 
 @media (max-width: 992px) {
@@ -125,11 +129,11 @@
   height: 2em;
   width: auto; }
   .bi :hover {
-    color: #BFE028;
+    color: #ace707;
     transition: 0.2s ease-out; }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   box-shadow: -4px 4px 10px black;
   border-bottom: 1px solid #464838;
   width: 100vw;
@@ -151,7 +155,7 @@
     font-weight: 700;
     font-size: 1.2vw; }
     .navbar .nav-link:hover {
-      color: #BFE028 !important;
+      color: #ace707 !important;
       filter: drop-shadow(1px 0px 5px rgba(255, 255, 255, 0.3));
       transition: 0.5s ease-out; }
   .navbar .navbar-toggler {
@@ -248,7 +252,7 @@
   padding: 2rem;
   margin-top: 3rem;
   align-items: center;
-  caret-color: #BFE028; }
+  caret-color: #ace707; }
 
 fieldset label,
 fieldset input {
@@ -261,7 +265,7 @@ fieldset div select {
 
 .boton {
   margin: 2em;
-  background-color: #BFE028;
+  background-color: #ace707;
   color: #000;
   text-transform: uppercase;
   padding: .5em;
@@ -347,19 +351,19 @@ fieldset div select {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Red Hat Mono', monospace;
   scroll-behavior: smooth; }
 
 .wrap-total {
   background: #464838;
-  background: url(../images/trbiendos.png), linear-gradient(340deg, #464838 21%, #87887e 99%);
+  background: url(../images/trbientres.png), linear-gradient(340deg, #464838 21%, #87887e 99%);
   /*background-image: url(../images/trbien.png);
    background-image: ;
    background: rgb(70,72,56);
 background: ;*/
   max-width: 100%;
   overflow-x: hidden;
-  z-index: -1; }
+  z-index: -1;
+  font-family: 'Red Hat Mono', monospace; }
 
 .wrap {
   display: flex;
@@ -392,7 +396,7 @@ background: ;*/
   color: #FFF;
   margin: 3rem auto;
   text-align: center;
-  text-shadow: 1px 1px 10px #ABAD9A;
+  text-shadow: 0px 0px 5px #ABAD9A;
   font-weight: 600; }
 
 .titulo {
@@ -400,15 +404,15 @@ background: ;*/
   max-width: 700px; }
   .titulo a {
     text-decoration: none;
-    color: #BFE028; }
+    color: #ace707; }
     .titulo a:hover {
       filter: drop-shadow(1px 0px 5px rgba(255, 255, 255, 0.3)); }
 
 .sombra {
-  text-shadow: #BFE028 2px 2px; }
+  text-shadow: #ace707 2px 2px; }
 
 .sombra-invertida {
-  text-shadow: #BFE028 2px -2px; }
+  text-shadow: #ace707 2px -2px; }
 
 .sombra-tenue {
-  text-shadow: #BFE028 2px 2px 5px; }
+  text-shadow: #ace707 2px 2px 5px; }
