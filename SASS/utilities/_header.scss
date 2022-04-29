@@ -24,9 +24,10 @@
         color: #fff !important;
         font-weight: 700;
         font-size: 1.2vw;
+        
         &:hover{
-            color: $mostaza !important;
-            filter: drop-shadow(1px 0px 5px $grisTenue);
+            color: map-get($paleta, mosta) !important;
+            @extend %opt-text;
             transition:0.5s ease-out;
         }
     }

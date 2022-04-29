@@ -1,5 +1,5 @@
 .qs-wrap {
-    @include flex (flex, row, nowrap, space-between, center, 2em); 
+    @include flex (flex, row, nowrap, space-between, center, .5em); 
     @extend %glassmorphism;
     margin-top: 3em;
     max-width: 60rem;
@@ -9,7 +9,6 @@
         width: 30%;
         margin: auto;
         text-align: center;
-        font-weight: 600;
     }
     img {
         @extend %imagen;
@@ -32,7 +31,6 @@
         }
         p {
             width: 100%;
-            font-weight: 500;
         }       
     }
     .reverse {

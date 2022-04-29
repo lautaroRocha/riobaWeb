@@ -1,11 +1,10 @@
-
 .carousel {
     max-width: 400px;
     height: auto;
     overflow: hidden;
 }
 .titu-blan{
-    background-color: rgba(255, 255, 255, .5) !important;
+    background-color: $transpaClaro;
     box-shadow: -4px 4px 10px rgb(0, 0, 0,);
     border: 1px solid $grisClaro;
     border-radius: 10px;
@@ -13,9 +12,7 @@
     font-size: 3rem;
     font-weight: 400;
     text-align: center;
-    span {
-        color: #000;
-    }
+   
 }
 @media (max-width: $pantallaMedia) {
     .titu-blan {
@@ -29,6 +26,9 @@
     justify-items: center;
     width: 90vw;
     margin: 2rem auto;
+    span {
+        font-weight: 900;
+    }
 }
 .fila-fotos {
     display: grid;

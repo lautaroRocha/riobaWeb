@@ -3,11 +3,16 @@
     box-shadow: -4px 4px 10px rgb(0, 0, 0,);
     border: 1px solid rgba(255, 255, 255, .4);
     border-radius: 10px;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
 }
 %imagen {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, .4);
     width: 100%;
     height: auto;
+}
+
+%opt-text {
+    text-shadow: 1px 0px 1px #000, -1px 0px 1px #000,
+    0px 1px 1px #000,0px -1px 1px #000, 0px 0px 10px #fff;
 }
