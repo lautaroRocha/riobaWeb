@@ -10,12 +10,17 @@
     @include flex (flex, column, nowrap, center, center, 2em);
     @extend %glassmorphism;
     max-width: 20rem;
+    gap:.5rem;
+   
     img {
         @extend %imagen;
     }
+    span {
+        color: map-get($paleta, mosta);
+    }
 }
 .display-7 {
-    font-size: 2rem;    
+     font-size: 2rem;
 }
 @media (max-width: $pantallaMedia){
     .grilla3 {
@@ -26,5 +31,16 @@
         img {
             height: 60%;
         }
+    }
+}
+
+.boton-modelos {
+     background-color: transparent;
+     border-radius: 10px;
+     font-size: 2rem;  
+     border: 3px $grisClaro;
+     &:hover {
+        transform: scale(1.1);
+        transition: ease-in-out 0.3s;
     }
 }
