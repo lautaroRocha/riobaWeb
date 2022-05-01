@@ -136,7 +136,12 @@
     width: auto;}
 }
 }
-@media (max-width: 576px) {
+@media (max-width: $pantallaChica){
+    .overlay{
+        opacity: 1;
+    }
+}
+@media (max-width: $pantallaXChica) {
     .grid-index {
         display: flex;
         flex-direction: column-reverse;

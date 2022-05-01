@@ -119,6 +119,10 @@
       height: 100%;
       width: auto; } }
 
+@media (max-width: 768px) {
+  .overlay {
+    opacity: 1; } }
+
 @media (max-width: 576px) {
   .grid-index {
     display: flex;
