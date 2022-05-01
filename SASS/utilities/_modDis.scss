@@ -22,6 +22,19 @@
 .display-7 {
      font-size: 2rem;
 }
+.boton-modelos {
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 2rem;  
+    border: 3px $grisClaro;
+    &:hover {
+       transform: scale(1.1);
+       transition: ease-in-out 0.3s;
+       filter: drop-shadow(-5px 5px 2px #000);
+       transition:0.5s ease-out;
+   }
+}
+
 @media (max-width: $pantallaMedia){
     .grilla3 {
         flex-direction: column;
@@ -34,13 +47,3 @@
     }
 }
 
-.boton-modelos {
-     background-color: transparent;
-     border-radius: 10px;
-     font-size: 2rem;  
-     border: 3px $grisClaro;
-     &:hover {
-        transform: scale(1.1);
-        transition: ease-in-out 0.3s;
-    }
-}

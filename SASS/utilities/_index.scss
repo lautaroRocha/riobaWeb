@@ -57,7 +57,52 @@
         grid-area:atras;
         width: 100%;
     }
-}   
+}  
+.imag-inde {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    gap:2rem;
+    margin: 10vh auto;
+    img {
+        @extend %imagen;
+        height: auto;
+        width: 15rem;
+    }
+} 
+.wrap-overlay {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 15rem;
+    opacity: 0;
+    transition: .5s ease;
+    @extend %glassmorphism;
+    a{
+        color: #FFF; 
+        &:hover{
+            color: map-get($paleta, mosta);
+        }
+    }
+  }
+.wrap-overlay:hover .overlay {
+    opacity: 1;
+}
+.texto-over {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 @media (max-width: $pantallaMedia) {
     .grid-index { 
         grid-template-columns: repeat(5, 1fr);

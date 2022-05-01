@@ -1,11 +1,11 @@
-.fila-fotos img, .contac-wrap, .qs-wrap, .mod-dis-wrap, .wrap, .titulo {
+.overlay, .fila-fotos img, .contac-wrap, .qs-wrap, .mod-dis-wrap, .wrap, .titulo {
   background-color: rgba(0, 0, 0, 0.6);
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   backdrop-filter: blur(2px); }
 
-.grid-index img, .fila-fotos img, .qs-wrap img, .mod-dis-wrap img, .wrap img {
+.grid-index img, .imag-inde img, .fila-fotos img, .qs-wrap img, .mod-dis-wrap img, .wrap img {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   width: 100%;
@@ -54,6 +54,46 @@
     grid-area: atras;
     width: 100%; }
 
+.imag-inde {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 2rem;
+  margin: 10vh auto; }
+  .imag-inde img {
+    height: auto;
+    width: 15rem; }
+
+.wrap-overlay {
+  position: relative; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 15rem;
+  opacity: 0;
+  transition: .5s ease; }
+  .overlay a {
+    color: #FFF; }
+    .overlay a:hover {
+      color: #F7F85F; }
+
+.wrap-overlay:hover .overlay {
+  opacity: 1; }
+
+.texto-over {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
 @media (max-width: 992px) {
   .grid-index {
     grid-template-columns: repeat(5, 1fr);
@@ -98,7 +138,8 @@
       font-weight: 300; } }
 
 .pie {
-  background-color: #000;
+  background: black;
+  background: radial-gradient(circle, black 0%, #080808 0%, #151515 88%);
   color: #ABAD9A;
   width: 100vw;
   padding: 1rem;
@@ -111,15 +152,16 @@
   gap: 1rem; }
   .pie .iconos {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     gap: 2rem;
-    padding-top: 2rem; }
+    padding: 2rem 0rem .5rem; }
   .pie .legal {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 70%;
+    padding-bottom: 2vh; }
   .pie a {
     font-weight: 600;
-    margin: 0% 3%;
     color: #ABAD9A; }
     .pie a:hover {
       color: #F7F85F;
@@ -128,7 +170,8 @@
 @media (max-width: 992px) {
   .pie .iconos {
     width: 100vw;
-    justify-content: space-evenly; } }
+    padding: 2rem 0 .5rem;
+    gap: 4rem; } }
 
 .bi {
   height: 2em;
@@ -345,13 +388,6 @@ fieldset div select {
 .display-7 {
   font-size: 2rem; }
 
-@media (max-width: 992px) {
-  .grilla3 {
-    flex-direction: column;
-    gap: 1.5em; }
-  .mod-dis-wrap img {
-    height: 60%; } }
-
 .boton-modelos {
   background-color: transparent;
   border-radius: 10px;
@@ -359,7 +395,16 @@ fieldset div select {
   border: 3px #ABAD9A; }
   .boton-modelos:hover {
     transform: scale(1.1);
-    transition: ease-in-out 0.3s; }
+    transition: ease-in-out 0.3s;
+    filter: drop-shadow(-5px 5px 2px #000);
+    transition: 0.5s ease-out; }
+
+@media (max-width: 992px) {
+  .grilla3 {
+    flex-direction: column;
+    gap: 1.5em; }
+  .mod-dis-wrap img {
+    height: 60%; } }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)

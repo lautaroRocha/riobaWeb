@@ -1,5 +1,6 @@
 .pie {
-    background-color:#000;
+    background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(8,8,8,1) 0%, rgba(21,21,21,1) 88%);
     color: map-get($paleta, grisCla);
     width: 100vw;
     padding: 1rem;
@@ -12,17 +13,18 @@
     gap:1rem;
     .iconos  {
         display: flex;
-        justify-items: center;
+        justify-content: center;
         gap:2rem;
-        padding-top: 2rem;
+        padding: 2rem 0rem .5rem;
     }
     .legal {
         display: flex;
         flex-direction: column;
+        width: 70%;
+        padding-bottom: 2vh;
     }
     a {
         font-weight: 600;
-        margin: 0% 3%;
         color: map-get($paleta, grisCla);
         &:hover{
             color: map-get($paleta, mosta);
@@ -34,7 +36,9 @@
     .pie {
     .iconos {
         width: 100vw;
-        justify-content: space-evenly;}
+        padding: 2rem 0 .5rem;
+        gap:4rem;
+    }
     }
 }
 .bi {
