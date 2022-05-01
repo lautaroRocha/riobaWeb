@@ -35,6 +35,10 @@
    }
 }
 
+$modal-content-bg: $transpaClaro;
+$btn-close-color: $grisClaro;  
+$modal-header-border-color: $mostaza;
+
 @media (max-width: $pantallaMedia){
     .grilla3 {
         flex-direction: column;
