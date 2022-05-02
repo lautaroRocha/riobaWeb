@@ -1,22 +1,22 @@
 .qs-wrap {
-    @include flex (flex, row, nowrap, space-between, center, .5em); 
+    @include flex (flex, row, nowrap, space-around, center, 1em); 
     @extend %glassmorphism;
     margin-top: 3em;
     max-width: 60rem;
     align-items: center;
-    justify-content: space-between;
     p {
         width: 30%;
-        margin: auto;
+        margin: .5em;
         text-align: center;
     }
     img {
         @extend %imagen;
         height: auto;
-        width: 50%;
-        margin: 1rem;
+        width: 45%;
+        margin: .5em;
     }
 }
+
 .reverse {
     flex-direction: row-reverse;
 }

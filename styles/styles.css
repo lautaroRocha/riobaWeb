@@ -145,7 +145,6 @@
 
 .pie {
   background: black;
-  background: radial-gradient(circle, black 0%, #080808 0%, #151515 88%);
   color: #ABAD9A;
   width: 100vw;
   padding: 1rem;
@@ -328,25 +327,24 @@ fieldset div select {
 .qs-wrap {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
   width: fit-content;
   height: fit-content;
   margin-left: auto;
   margin-right: auto;
-  padding: 0.5em;
+  padding: 1em;
   margin-top: 3em;
   max-width: 60rem;
-  align-items: center;
-  justify-content: space-between; }
+  align-items: center; }
   .qs-wrap p {
     width: 30%;
-    margin: auto;
+    margin: .5em;
     text-align: center; }
   .qs-wrap img {
     height: auto;
-    width: 50%;
-    margin: 1rem; }
+    width: 45%;
+    margin: .5em; }
 
 .reverse {
   flex-direction: row-reverse; }
