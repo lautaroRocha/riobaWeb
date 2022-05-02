@@ -40,20 +40,21 @@
     margin: auto;
     letter-spacing: .5rem; }
   .grid-index #buzoA {
-    grid-area: buzo; }
+    grid-area: buzo;
+    width: 100vw; }
   .grid-index #chomba {
     grid-area: chomba;
-    width: 100%; }
+    width: 100vw; }
   .grid-index #bolso {
     grid-area: bolso;
     height: 100%; }
   .grid-index #cream {
     grid-area: cream;
     height: 100%;
-    width: 100%; }
+    width: 100vw; }
   .grid-index #atras {
     grid-area: atras;
-    width: 100%; }
+    width: 100vw; }
 
 .imag-inde {
   display: flex;

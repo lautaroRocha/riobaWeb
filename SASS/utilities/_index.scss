@@ -39,10 +39,11 @@
     }
         #buzoA {
         grid-area: buzo;
+        width: 100vw;
     }
         #chomba {
         grid-area:chomba;
-        width: 100%;
+        width: 100vw;
     }
         #bolso {
         grid-area:bolso;
@@ -51,11 +52,11 @@
         #cream {
         grid-area:cream;
         height: 100%;
-        width: 100%;
+        width: 100vw;
     }
         #atras {
         grid-area:atras;
-        width: 100%;
+        width: 100vw;
     }
 }  
 .imag-inde {
