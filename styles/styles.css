@@ -14,6 +14,13 @@
 .navbar .nav-link:hover, .texto {
   text-shadow: 1px 0px 1px #000, -1px 0px 1px #000, 0px 1px 1px #000,0px -1px 1px #000, 0px 0px 10px #fff; }
 
+.fila-fotos, .fila-mods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem auto;
+  width: 90vw; }
+
 .grid-index {
   display: grid;
   grid-template-columns: repeat 10, 1fr;
@@ -251,13 +258,6 @@
   .fila-titu span {
     font-weight: 900; }
 
-.fila-fotos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin: 2rem auto;
-  width: 90vw; }
-
 @media (max-width: 768px) {
   .fila-fotos {
     grid-template-columns: 1fr;
@@ -366,13 +366,10 @@ fieldset div select {
   .qs-wrap {
     max-width: 400px; } }
 
-.grilla3 {
-  display: flex;
-  place-items: center;
-  width: fit-content;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 3em; }
+@media (max-width: 768px) {
+  .fila-mods {
+    grid-template-columns: 1fr;
+    padding: 1rem; } }
 
 .mod-dis-wrap {
   display: flex;
@@ -383,11 +380,17 @@ fieldset div select {
   height: fit-content;
   margin-left: auto;
   margin-right: auto;
-  padding: 2em;
+  padding: 1.5rem;
   max-width: 20rem;
   gap: .5rem; }
   .mod-dis-wrap span {
-    color: #F7F85F; }
+    color: #F7F85F;
+    font-size: 3vw;
+    margin: auto; }
+
+@media (max-width: 768px) {
+  .mod-dis-wrap span {
+    font-size: 2rem; } }
 
 .display-7 {
   font-size: 2rem; }

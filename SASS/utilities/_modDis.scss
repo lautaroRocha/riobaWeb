@@ -1,22 +1,32 @@
-.grilla3 {
-    display: flex;
-    place-items: center;
-    width: fit-content;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 3em;
+
+.fila-mods {
+    @extend %linea-tres;
+}
+@media (max-width: $pantallaChica) {
+    .fila-mods {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
 }
 .mod-dis-wrap {
-    @include flex (flex, column, nowrap, center, center, 2em);
+    @include flex (flex, column, nowrap, center, center, 1.5rem);
     @extend %glassmorphism;
     max-width: 20rem;
     gap:.5rem;
-   
     img {
         @extend %imagen;
     }
     span {
         color: map-get($paleta, mosta);
+        font-size: 3vw;
+        margin: auto;
+    }
+}
+@media (max-width: $pantallaChica){
+    .mod-dis-wrap{
+        span{
+            font-size: 2rem;
+        }
     }
 }
 .display-7 {

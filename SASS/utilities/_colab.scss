@@ -31,11 +31,7 @@
     }
 }
 .fila-fotos {
-    display: grid;
-    grid-template-columns:repeat(3,1fr);
-    gap: 2rem;
-    margin: 2rem auto;
-    width: 90vw;
+    @extend %linea-tres;
     img {
     @extend %glassmorphism;
     @extend %imagen;
