@@ -63,9 +63,7 @@
     .grid-index { 
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(1, 2fr);
-        height: auto;
-        -webkit-height:auto;
-    
+        min-height: 42rem;
     #buzoA { 
         grid-area: 1 / 1 / 6 / 3; 
         height: 100%; 
