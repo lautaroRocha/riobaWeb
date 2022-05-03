@@ -27,7 +27,7 @@
   grid-template-rows: repeat(9, 1fr) 0.5fr;
   grid-template-areas: "buzo buzo chomba chomba soy soy soy soy" "buzo buzo chomba chomba soy soy soy soy" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba bolso bolso cream cream" "buzo buzo chomba chomba bolso bolso cream cream" "patch patch patch patch bolso bolso cream cream";
   gap: 1em;
-  height: auto; }
+  height: 25rem; }
   .grid-index img {
     object-fit: cover;
     max-width: 100%;
