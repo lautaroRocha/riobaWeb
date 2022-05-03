@@ -13,7 +13,7 @@
                           "buzo buzo chomba chomba bolso bolso cream cream"
                           "patch patch patch patch bolso bolso cream cream";
                          
-    grid-gap:1em;
+    gap:1em;
     height: 25rem;
      img{
     @extend %imagen;    
@@ -63,6 +63,7 @@
     .grid-index { 
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(1, 2fr);
+        height: auto;
     
     #buzoA { 
         grid-area: 1 / 1 / 6 / 3; 
@@ -96,6 +97,7 @@
     .grid-index {
         display: flex;
         flex-direction: column-reverse;
+        height: 80rem;
         #chomba {
             display: none;
         }
@@ -123,7 +125,8 @@
     flex-wrap: wrap;
     width: 90%;
     gap:2rem;
-    margin: 10vh auto;
+    margin: 5rem auto;
+    max-width: 1300px;
     img {
         @extend %imagen;
         height: auto;
