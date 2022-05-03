@@ -1,4 +1,4 @@
-.overlay, .fila-fotos img, .contac-wrap, .qs-wrap, .mod-dis-wrap, .wrap, .titulo {
+.imag-inde .overlay, .fila-fotos img, .contac-wrap, .qs-wrap, .mod-dis-wrap, .wrap, .titulo {
   background-color: rgba(0, 0, 0, 0.6);
   box-shadow: -4px 4px 10px black;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -63,46 +63,6 @@
     grid-area: atras;
     width: 100vw; }
 
-.imag-inde {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 90%;
-  gap: 2rem;
-  margin: 10vh auto; }
-  .imag-inde img {
-    height: auto;
-    width: 15rem; }
-
-.wrap-overlay {
-  position: relative; }
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: auto;
-  width: 15rem;
-  opacity: 0;
-  transition: .5s ease; }
-  .overlay a {
-    color: #FFF; }
-    .overlay a:hover {
-      color: #F7F85F; }
-
-.wrap-overlay:hover .overlay {
-  opacity: 1; }
-
-.texto-over {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
 @media (max-width: 992px) {
   .grid-index {
     grid-template-columns: repeat(5, 1fr);
@@ -128,10 +88,6 @@
       height: 100%;
       width: auto; } }
 
-@media (max-width: 768px) {
-  .overlay {
-    opacity: 1; } }
-
 @media (max-width: 576px) {
   .grid-index {
     display: flex;
@@ -149,6 +105,48 @@
     .grid-index #patch {
       font-size: 1.8rem;
       font-weight: 300; } }
+
+/*IMAGENES CON MODAL*/
+.imag-inde {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 2rem;
+  margin: 10vh auto; }
+  .imag-inde img {
+    height: auto;
+    width: 15rem; }
+  .imag-inde .wrap-overlay {
+    position: relative; }
+  .imag-inde .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 15rem;
+    opacity: 0;
+    transition: 0.5s ease-in-out; }
+    .imag-inde .overlay a {
+      color: #FFF; }
+      .imag-inde .overlay a:hover {
+        color: #F7F85F;
+        transition: 0.5s ease-in-out; }
+  .imag-inde .wrap-overlay:hover .overlay {
+    opacity: 1; }
+  .imag-inde .texto-over {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+@media (max-width: 992px) {
+  .imag-inde .overlay {
+    opacity: 1; } }
 
 .pie {
   background: black;
@@ -211,7 +209,6 @@
     margin-right: 7%; }
   .navbar .nav-link {
     text-transform: uppercase;
-    color: #fff;
     font-weight: 700;
     font-size: 1.2vw; }
     .navbar .nav-link:hover {
