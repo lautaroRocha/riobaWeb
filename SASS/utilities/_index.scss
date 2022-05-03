@@ -13,7 +13,7 @@
                           "buzo buzo chomba chomba bolso bolso cream cream"
                           "patch patch patch patch bolso bolso cream cream";
                          
-    gap:1em;
+    grid-gap:1em;
     height: 25rem;
      img{
     @extend %imagen;    
