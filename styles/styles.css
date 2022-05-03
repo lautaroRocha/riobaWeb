@@ -26,7 +26,7 @@
   grid-template-columns: repeat 10, 1fr;
   grid-template-rows: repeat(9, 1fr) 0.5fr;
   grid-template-areas: "buzo buzo chomba chomba soy soy soy soy" "buzo buzo chomba chomba soy soy soy soy" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba atras atras cream cream" "buzo buzo chomba chomba bolso bolso cream cream" "buzo buzo chomba chomba bolso bolso cream cream" "patch patch patch patch bolso bolso cream cream";
-  grid-gap: 1em;
+  gap: 1em;
   height: 25rem; }
   .grid-index img {
     object-fit: cover;
@@ -66,7 +66,8 @@
 @media (max-width: 992px) {
   .grid-index {
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 2fr); }
+    grid-template-rows: repeat(1, 2fr);
+    height: 50rem; }
     .grid-index #buzoA {
       grid-area: 1 / 1 / 6 / 3;
       height: 100%; }
@@ -91,7 +92,8 @@
 @media (max-width: 576px) {
   .grid-index {
     display: flex;
-    flex-direction: column-reverse; }
+    flex-direction: column-reverse;
+    height: 80rem; }
     .grid-index #chomba {
       display: none; }
     .grid-index #buzoA {
@@ -113,7 +115,8 @@
   flex-wrap: wrap;
   width: 90%;
   gap: 2rem;
-  margin: 10vh auto; }
+  margin: 5rem auto;
+  max-width: 1300px; }
   .imag-inde img {
     height: auto;
     width: 15rem; }
