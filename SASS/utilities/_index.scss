@@ -64,6 +64,7 @@
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(1, 2fr);
         height: auto;
+        -webkit-height:auto;
     
     #buzoA { 
         grid-area: 1 / 1 / 6 / 3; 
