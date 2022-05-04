@@ -65,9 +65,9 @@
 
 @media (max-width: 992px) {
   .grid-index {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 2fr);
-    height: 70%; }
+    grid-template-columns: repeat(5, 4rem);
+    grid-template-rows: repeat(1, 8rem);
+    height: auto; }
     .grid-index #buzoA {
       grid-area: 1 / 1 / 6 / 3;
       height: 100%;

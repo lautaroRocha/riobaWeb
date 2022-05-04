@@ -61,8 +61,9 @@
 }  
 @media (max-width: $pantallaMedia) {
     .grid-index { 
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(1, 2fr);
+        grid-template-columns: repeat(5, 4rem);
+        grid-template-rows: repeat(1, 8rem);
+        height: auto;
     #buzoA { 
         grid-area: 1 / 1 / 6 / 3; 
         height: 100%; 
