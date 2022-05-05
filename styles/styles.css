@@ -158,17 +158,16 @@
   width: 100vw;
   padding: 1rem;
   bottom: 0;
-  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 1rem; }
+  text-align: center; }
   .pie .iconos {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    padding: 2rem 0rem .5rem; }
+    padding: 2rem 0rem 1rem; }
+    .pie .iconos a {
+      margin: 0 2rem; }
   .pie .legal {
     display: flex;
     flex-direction: column;
@@ -185,7 +184,7 @@
   .pie .iconos {
     width: 100vw;
     padding: 2rem 0 .5rem;
-    gap: 4rem; } }
+    margin: 0 4rem; } }
 
 .bi {
   height: 2em;
