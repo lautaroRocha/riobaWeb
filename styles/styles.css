@@ -21,6 +21,12 @@
   margin: 2rem auto;
   width: 90vw; }
 
+@supports not (gap: 1rem) {
+  #cream {
+    display: none; }
+  #chomba {
+    display: none; } }
+
 .grid-index {
   display: grid;
   grid-template-columns: repeat 10, 1fr;
@@ -115,12 +121,12 @@
   justify-content: space-around;
   flex-wrap: wrap;
   width: 90%;
-  gap: 2rem;
   margin: 5rem auto;
   max-width: 1300px; }
   .imag-inde img {
     height: auto;
-    width: 15rem; }
+    width: 15rem;
+    margin: 0rem 0.5rem; }
   .imag-inde .wrap-overlay {
     position: relative; }
   .imag-inde .overlay {
@@ -129,6 +135,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+    margin: 0rem 0.5rem;
     height: auto;
     width: 15rem;
     opacity: 0;
@@ -144,8 +151,6 @@
     position: absolute;
     top: 30%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
 
 @media (max-width: 992px) {
