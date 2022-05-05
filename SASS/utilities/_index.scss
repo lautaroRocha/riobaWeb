@@ -1,11 +1,3 @@
-@supports not (gap:1rem) {
-    #cream {
-        display: none;
-    }
-    #chomba {
-        display: none;
-    }
- }
 
 .grid-index {
     display: grid;
@@ -88,7 +80,7 @@
     } 
     #cream {
     grid-area: 10/1/12/4;
-    gap: 1rem;
+    display: none;
     }
     #bolso {
     display: none;
@@ -101,7 +93,9 @@
     #chomba {
     grid-area: 10/4/12/6;
     height: 100%; 
-    width: auto;}
+    width: auto;
+display: none;
+}
 }
 }
 @media (max-width: $pantallaXChica) {
