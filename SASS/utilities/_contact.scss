@@ -1,22 +1,59 @@
 .contac-wrap {
-    @include flex (flex, column, nowrap,center, center, 2rem);
+    @include flex (flex, row, nowrap, center, center, 0rem 3rem);
     @extend %glassmorphism;
-    margin-top: 3rem;
-    align-items: center;
+    margin: 3rem auto 0rem;
     caret-color: map-get($paleta, #{mosta});
 }
-fieldset {
-    label,
-    input {
-        margin-top: 1em;
-    }
+.forma {
+    display: flex;
+    gap: 3rem;
+}
 
-    input,
-    textarea,
-    div select{
-        background-color: #fff;
+@media (max-width:$pantallaChica) {
+    .forma {
+        display: block;
     }
 }
+.col-cont{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+fieldset {
+    label {
+        margin-top: 1em;
+    }
+    input {
+        margin-top: 1em;
+        border-radius: 10px;
+        padding: 0rem 1rem;
+        &::placeholder {
+            font-weight: 900;
+            padding: 0.5rem;
+        }    
+}
+    select{
+       background-color: #fff;
+       margin-top: 1rem;
+       border-radius: 10px;
+       padding: 0rem 1rem;
+       &::placeholder {
+        font-weight: 900;
+        padding: 0.5rem;
+    }
+   }
+   textarea {
+       border-radius: 10px;
+       height: 5.4rem;
+       padding: 0rem 1rem;
+       &::placeholder {
+        font-weight: 900;
+        padding: 0.5rem;
+    }
+   }
+}
+
 .boton {
     margin: 2em;
     background-color: map-get( $paleta,mosta );
@@ -24,5 +61,18 @@ fieldset {
     text-transform: uppercase;
     padding: .5em;
     font-weight: 600;
-    box-shadow: -2vh 2vh #222;
+    box-shadow: -1vh 1vh 5px $grisClaro;
+    &:hover{
+        transition: 0.2s ease-in;
+        transform: translateY(5px);
+        background-color: map;
+        box-shadow: -1vh 1vh 10px #fff;
+        background-color: darken(map-get( $paleta,mosta), 10%);
+    }
+    &:active {
+        background-color: #000;
+        color: darken(map-get( $paleta,mosta), 10%);
+        border: 2px solid $mostaza;
+
+    }
 }
