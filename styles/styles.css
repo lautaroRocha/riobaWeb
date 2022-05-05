@@ -84,7 +84,8 @@
     .grid-index #atras {
       grid-area: 4 / 3 / 6 / 6; }
     .grid-index #cream {
-      grid-area: 10/1/12/4; }
+      grid-area: 10/1/12/4;
+      gap: 1rem; }
     .grid-index #bolso {
       display: none; }
     .grid-index #patch {
