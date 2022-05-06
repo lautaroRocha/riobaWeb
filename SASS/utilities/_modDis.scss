@@ -1,5 +1,7 @@
 .fila-mods {
     @extend %linea-tres;
+    margin-bottom: 20vh;
+
 }
 @media (max-width: $pantallaChica) {
     .fila-mods {
@@ -12,8 +14,6 @@
     @extend %glassmorphism;
     max-width: 20rem;
     max-height: 23rem;
-    min-height: 15rem;
-    gap:.5rem;
     img {
         @extend %imagen;
     }

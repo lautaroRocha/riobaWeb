@@ -443,6 +443,9 @@ fieldset textarea {
   .qs-wrap {
     max-width: 400px; } }
 
+.fila-mods {
+  margin-bottom: 20vh; }
+
 @media (max-width: 768px) {
   .fila-mods {
     grid-template-columns: 1fr;
@@ -459,9 +462,7 @@ fieldset textarea {
   margin-right: auto;
   padding: 1.5rem;
   max-width: 20rem;
-  max-height: 23rem;
-  min-height: 15rem;
-  gap: .5rem; }
+  max-height: 23rem; }
   .mod-dis-wrap span {
     color: #F7F85F;
     font-size: clamp 1.5rem 2vw 3rem;
