@@ -162,6 +162,7 @@
 .pie {
   background: black;
   color: #ABAD9A;
+  position: relative;
   bottom: 0;
   display: flex;
   flex-flow: column nowrap;
