@@ -19,7 +19,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin: 2rem auto;
-  width: 90vw; }
+  width: 90vw;
+  max-width: 1000px; }
 
 .grid-index {
   display: grid;
@@ -294,7 +295,8 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   width: 90vw;
-  margin: 2rem auto; }
+  margin: 2rem auto;
+  max-width: 1000px; }
   .fila .titulo {
     max-width: 300px;
     height: fit-content;
@@ -332,8 +334,7 @@
   caret-color: #F7F85F; }
 
 .forma {
-  display: flex;
-  gap: 3rem; }
+  display: flex; }
 
 @media (max-width: 768px) {
   .forma {
@@ -343,7 +344,8 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: 0 2rem; }
 
 fieldset label {
   margin-top: 1em; }
@@ -456,10 +458,11 @@ fieldset textarea {
   margin-right: auto;
   padding: 1.5rem;
   max-width: 20rem;
+  max-height: 23rem;
   gap: .5rem; }
   .mod-dis-wrap span {
     color: #F7F85F;
-    font-size: 3vw;
+    font-size: 2rem;
     margin: auto; }
 
 @media (max-width: 768px) {
@@ -481,9 +484,6 @@ fieldset textarea {
     transition: 0.5s ease-out; }
 
 @media (max-width: 992px) {
-  .grilla3 {
-    flex-direction: column;
-    gap: 1.5em; }
   .mod-dis-wrap img {
     height: 60%; } }
 
@@ -8307,6 +8307,7 @@ textarea.form-control-lg {
 .wrap-total {
   background: #464838;
   background: url(../images/trbientres.png), linear-gradient(340deg, #464838 21%, #87887e 99%);
+  height: 100%;
   max-width: 100%;
   overflow-x: hidden;
   z-index: -1;

@@ -11,13 +11,14 @@
     @include flex (flex, column, nowrap, center, center, 1.5rem);
     @extend %glassmorphism;
     max-width: 20rem;
+    max-height: 23rem;
     gap:.5rem;
     img {
         @extend %imagen;
     }
     span {
         color: map-get($paleta, mosta);
-        font-size: 3vw;
+        font-size: 2rem;
         margin: auto;
     }
 }
@@ -47,10 +48,6 @@ $modal-content-bg: $transpaClaro;
 $btn-close-color: $grisClaro;  
 $modal-header-border-color: $mostaza;
 @media (max-width: $pantallaMedia){
-    .grilla3 {
-        flex-direction: column;
-        gap: 1.5em;
-    }
     .mod-dis-wrap {
         img {
             height: 60%;
