@@ -73,6 +73,8 @@ fieldset {
         background-color: #000;
         color: darken(map-get( $paleta,mosta), 10%);
         border: 2px solid $mostaza;
+        box-shadow: 1px 0px 10px $mostaza, -1px 0px 10px $mostaza,
+        0px 1px 10px $mostaza,0px -1px 10px $mostaza;
 
     }
 }

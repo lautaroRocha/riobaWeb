@@ -393,7 +393,8 @@ fieldset textarea {
   .boton:active {
     background-color: #000;
     color: #f5f62e;
-    border: 2px solid #F7F85F; }
+    border: 2px solid #F7F85F;
+    box-shadow: 1px 0px 10px #F7F85F, -1px 0px 10px #F7F85F, 0px 1px 10px #F7F85F, 0px -1px 10px #F7F85F; }
 
 .qs-wrap {
   display: flex;
@@ -443,9 +444,6 @@ fieldset textarea {
   .qs-wrap {
     max-width: 400px; } }
 
-.fila-mods {
-  margin-bottom: 20vh; }
-
 @media (max-width: 768px) {
   .fila-mods {
     grid-template-columns: 1fr;
@@ -462,11 +460,11 @@ fieldset textarea {
   margin-right: auto;
   padding: 1.5rem;
   max-width: 20rem;
-  max-height: 23rem; }
+  max-height: 23rem;
+  min-width: 14rem; }
   .mod-dis-wrap span {
     color: #F7F85F;
     font-size: clamp 1.5rem 2vw 3rem;
-    margin: auto;
     white-space: nowrap; }
 
 @media (max-width: 768px) {
