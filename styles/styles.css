@@ -78,7 +78,6 @@
     .grid-index #atras {
       grid-area: 4 / 3 / 6 / 6; }
     .grid-index #cream {
-      grid-area: 10/1/12/4;
       display: none; }
     .grid-index #bolso {
       display: none; }
@@ -87,9 +86,6 @@
       letter-spacing: 0px;
       font-size: clamp(1.5rem, 4.5vw, 7rem); }
     .grid-index #chomba {
-      grid-area: 10/4/12/6;
-      height: 100%;
-      width: auto;
       display: none; } }
 
 @media (max-width: 576px) {
@@ -109,18 +105,23 @@
       display: none; }
     .grid-index #patch {
       font-size: 1.8rem;
-      font-weight: 300; } }
+      font-weight: 600; } }
 
 /*IMAGENES CON MODAL*/
 .imag-inde {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-around;
-  flex-wrap: wrap;
-  width: 90%;
+  align-content: center;
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 80%;
   margin: 5rem auto;
   max-width: 1300px; }
   .imag-inde img {
-    height: auto;
     width: 15rem;
     margin: 1rem 0.5rem; }
   .imag-inde .wrap-overlay {
@@ -150,19 +151,30 @@
     transform: translate(-50%, -50%); }
 
 @media (max-width: 992px) {
-  .imag-inde .overlay {
-    opacity: 1; } }
+  .imag-inde {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr; }
+    .imag-inde .overlay {
+      opacity: 1; } }
 
 .pie {
   background: black;
   color: #ABAD9A;
-  width: 100vw;
-  padding: 1rem;
   bottom: 0;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-content: center;
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 100vw;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  margin-top: 5rem; }
   .pie .iconos {
     display: flex;
     justify-content: center;
@@ -171,7 +183,14 @@
       margin: 0 2rem; }
   .pie .legal {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: center;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
     width: 70%;
     padding-bottom: 2vh; }
   .pie a {
@@ -235,7 +254,7 @@
   height: auto;
   overflow: hidden; }
 
-.titu-blan {
+.titu-art {
   background-color: rgba(0, 0, 0, 0.6);
   box-shadow: -4px 4px 10px black;
   border: 1px solid #ABAD9A;
@@ -252,8 +271,14 @@
 
 .fila-titu {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
-  justify-items: center;
+  align-content: center;
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
   width: 90vw;
   margin: 2rem auto; }
   .fila-titu span {
@@ -377,7 +402,7 @@ fieldset textarea {
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
-  margin-top: 3em;
+  margin: 3em auto;
   max-width: 60rem;
   align-items: center; }
   .qs-wrap p {
@@ -385,7 +410,6 @@ fieldset textarea {
     margin: .5em;
     text-align: center; }
   .qs-wrap img {
-    height: auto;
     width: 45%;
     margin: .5em; }
 
@@ -394,7 +418,14 @@ fieldset textarea {
 
 @media (max-width: 992px) {
   .qs-wrap {
-    flex-direction: column-reverse;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: space-around;
+    align-content: center;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1em;
     margin: 3rem auto;
     max-width: 500px; }
@@ -8276,10 +8307,6 @@ textarea.form-control-lg {
 .wrap-total {
   background: #464838;
   background: url(../images/trbientres.png), linear-gradient(340deg, #464838 21%, #87887e 99%);
-  /*background-image: url(../images/trbien.png);
-   background-image: ;
-   background: rgb(70,72,56);
-background: ;*/
   max-width: 100%;
   overflow-x: hidden;
   z-index: -1;

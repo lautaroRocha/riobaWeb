@@ -1,4 +1,3 @@
-
 .fila-mods {
     @extend %linea-tres;
 }
@@ -44,11 +43,9 @@
        transition:0.5s ease-out;
    }
 }
-
 $modal-content-bg: $transpaClaro;
 $btn-close-color: $grisClaro;  
 $modal-header-border-color: $mostaza;
-
 @media (max-width: $pantallaMedia){
     .grilla3 {
         flex-direction: column;
