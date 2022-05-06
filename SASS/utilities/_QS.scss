@@ -1,7 +1,7 @@
 .qs-wrap {
     @include flex (flex, row, nowrap, space-around, center, 1em); 
     @extend %glassmorphism;
-    margin-top: 3em;
+    margin: 3em auto;
     max-width: 60rem;
     align-items: center;
     p {
@@ -11,10 +11,10 @@
     }
     img {
         @extend %imagen;
-        height: auto;
         width: 45%;
         margin: .5em;
     }
+  
 }
 
 .reverse {
@@ -22,8 +22,7 @@
 }
 @media (max-width:$pantallaMedia) {
     .qs-wrap {
-        flex-direction: column-reverse;
-        padding: 1em;
+        @include flex (flex, column-reverse, nowrap, space-around, center, 1em);
         margin: 3rem auto;
         max-width: 500px;
         img {
