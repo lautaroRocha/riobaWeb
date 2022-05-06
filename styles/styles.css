@@ -17,10 +17,11 @@
 .fila-fotos, .fila-mods {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
   margin: 2rem auto;
   width: 90vw;
   max-width: 1000px; }
+  .fila-fotos div, .fila-mods div {
+    margin: 1rem; }
 
 .grid-index {
   display: grid;
@@ -447,7 +448,9 @@ fieldset textarea {
 @media (max-width: 768px) {
   .fila-mods {
     grid-template-columns: 1fr;
-    padding: 1rem; } }
+    padding: 1rem; }
+    .fila-mods div {
+      margin: 1rem auto; } }
 
 .mod-dis-wrap {
   display: flex;

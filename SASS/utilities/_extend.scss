@@ -19,8 +19,11 @@
 %linea-tres {
     display: grid;
     grid-template-columns:repeat(3,1fr);
-    gap: 2rem;
     margin: 2rem auto;
     width: 90vw;
     max-width: 1000px;
+    div{
+        margin: 1rem;
+    }
+
 }

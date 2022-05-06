@@ -5,6 +5,9 @@
     .fila-mods {
         grid-template-columns: 1fr;
         padding: 1rem;
+        div {
+            margin: 1rem auto;
+        }
     }
 }
 .mod-dis-wrap {
