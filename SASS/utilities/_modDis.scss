@@ -12,14 +12,16 @@
     @extend %glassmorphism;
     max-width: 20rem;
     max-height: 23rem;
+    min-height: 15rem;
     gap:.5rem;
     img {
         @extend %imagen;
     }
     span {
         color: map-get($paleta, mosta);
-        font-size: 2rem;
+        font-size: clamp (1.5rem 2vw 3rem);
         margin: auto;
+        white-space: nowrap;
     }
 }
 @media (max-width: $pantallaChica){

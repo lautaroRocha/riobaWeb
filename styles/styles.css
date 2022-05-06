@@ -460,11 +460,13 @@ fieldset textarea {
   padding: 1.5rem;
   max-width: 20rem;
   max-height: 23rem;
+  min-height: 15rem;
   gap: .5rem; }
   .mod-dis-wrap span {
     color: #F7F85F;
-    font-size: 2rem;
-    margin: auto; }
+    font-size: clamp 1.5rem 2vw 3rem;
+    margin: auto;
+    white-space: nowrap; }
 
 @media (max-width: 768px) {
   .mod-dis-wrap span {
