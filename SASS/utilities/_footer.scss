@@ -1,6 +1,7 @@
 .pie {
     background: rgb(0,0,0);
     color: map-get($paleta, grisCla);
+    position: relative;
     bottom: 0;
     @include flex (flex, column, nowrap, space-around, center, 0);
     width: 100vw;
