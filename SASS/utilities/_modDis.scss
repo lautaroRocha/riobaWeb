@@ -13,8 +13,7 @@
 .mod-dis-wrap {
     @include flex (flex, column, nowrap, center, center, 1.5rem);
     @extend %glassmorphism;
-    max-width: 20rem;
-    max-height: 23rem;
+
     img {
         @extend %imagen;
     }
@@ -24,8 +23,18 @@
         white-space: nowrap;
     }
 }
+@media (max-width: $pantallaMedia){
+    .mod-dis-wrap {
+        max-width: 13rem;
+        span {
+            font-size: 1.5rem;
+        }
+    }
+}
+
 @media (max-width: $pantallaChica){
     .mod-dis-wrap{
+        max-width: 20rem;
         span{
             font-size: 2rem;
         }

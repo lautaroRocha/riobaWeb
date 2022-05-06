@@ -16,7 +16,7 @@
 
 .fila-fotos, .fila-mods {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, 33%);
   margin: 2rem auto;
   width: 90vw;
   max-width: 1000px; }
@@ -461,17 +461,23 @@ fieldset textarea {
   height: fit-content;
   margin-left: auto;
   margin-right: auto;
-  padding: 1.5rem;
-  max-width: 20rem;
-  max-height: 23rem; }
+  padding: 1.5rem; }
   .mod-dis-wrap span {
     color: #F7F85F;
     font-size: clamp 1.5rem 2vw 3rem;
     white-space: nowrap; }
 
+@media (max-width: 992px) {
+  .mod-dis-wrap {
+    max-width: 13rem; }
+    .mod-dis-wrap span {
+      font-size: 1.5rem; } }
+
 @media (max-width: 768px) {
-  .mod-dis-wrap span {
-    font-size: 2rem; } }
+  .mod-dis-wrap {
+    max-width: 20rem; }
+    .mod-dis-wrap span {
+      font-size: 2rem; } }
 
 .display-7 {
   font-size: 2rem; }
