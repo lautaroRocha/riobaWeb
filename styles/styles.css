@@ -39,7 +39,8 @@
     grid-area: soy;
     font-size: 2rem;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    padding: 0; }
   .grid-index #patch {
     color: #FFF;
     text-transform: uppercase;
