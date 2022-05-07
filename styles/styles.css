@@ -38,6 +38,7 @@
     text-align: center;
     grid-area: soy;
     align-self: center;
+    font-size: 1.5rem;
     margin: auto; }
   .grid-index #patch {
     color: #FFF;
