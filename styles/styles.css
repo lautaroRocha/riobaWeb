@@ -162,8 +162,10 @@
       opacity: 1; } }
 
 .pie {
+  grid-area: foot;
   background: black;
   color: #ABAD9A;
+  position: relative;
   bottom: 0;
   display: flex;
   flex-flow: column nowrap;
@@ -217,6 +219,7 @@
     transition: 0.2s ease-out; }
 
 .navbar {
+  grid-area: head;
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: -4px 4px 10px black;
   border-bottom: 1px solid #464838;
@@ -444,6 +447,9 @@ fieldset textarea {
 @media (max-width: 768px) {
   .qs-wrap {
     max-width: 400px; } }
+
+.fila-mods {
+  padding-bottom: 30vh; }
 
 @media (max-width: 768px) {
   .fila-mods {
@@ -8315,14 +8321,19 @@ textarea.form-control-lg {
   scroll-behavior: smooth; }
 
 .wrap-total {
+  display: grid;
+  grid-template-areas: "head" "main" "foot";
   background: #464838;
   background: url(../images/trbientres.png), linear-gradient(340deg, #464838 21%, #87887e 99%);
-  height: 100vh;
+  height: 100%;
   max-width: 100%;
   overflow-x: hidden;
   z-index: -1;
   font-family: 'Red Hat Mono', monospace;
   color: #FEFEFE; }
+
+main {
+  grid-area: main; }
 
 .wrap {
   display: flex;

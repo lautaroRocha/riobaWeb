@@ -16,16 +16,24 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
-.wrap-total {
+.wrap-total {   
+    display: grid;
+    grid-template-areas: "head"
+                         "main"
+                         "foot";
    background: rgb(70,72,56);
    background: url(../images/trbientres.png), linear-gradient(340deg, rgba(70,72,56,1) 21%, rgba(135,136,126,1) 99%);
-   height: 100vh;
+   height: 100%;
    max-width: 100%;
    overflow-x: hidden;
    z-index: -1;
    font-family: 'Red Hat Mono', monospace;
    color: #FEFEFE;  
+}
+main {
+    grid-area: main;
 }
 .wrap{
     @include flex (flex, row, nowrap, center, center, 1.5em);

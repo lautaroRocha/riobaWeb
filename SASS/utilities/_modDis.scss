@@ -1,5 +1,6 @@
 .fila-mods {
     @extend %linea-tres;
+    padding-bottom: 30vh;
 }
 @media (max-width: $pantallaChica) {
     .fila-mods {
