@@ -37,7 +37,8 @@
   .grid-index #soyT {
     text-align: center;
     grid-area: soy;
-    align-self: center; }
+    align-self: center;
+    margin: auto; }
   .grid-index #patch {
     color: #FFF;
     text-transform: uppercase;
