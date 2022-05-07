@@ -161,6 +161,10 @@
     .imag-inde .overlay {
       opacity: 1; } }
 
+@media (max-width: 768px) {
+  .imag-inde {
+    grid-template-columns: 1fr; } }
+
 .pie {
   grid-area: foot;
   background: black;
