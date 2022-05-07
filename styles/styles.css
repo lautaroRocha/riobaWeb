@@ -224,7 +224,7 @@
   box-shadow: -4px 4px 10px black;
   border-bottom: 1px solid #464838;
   width: 100vw;
-  max-width: 1500px;
+  max-width: 2500px;
   margin: 0 auto; }
   .navbar .logo {
     width: 15rem;
@@ -335,7 +335,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0rem 3rem;
-  margin: 3rem auto 0rem;
+  margin: 3rem auto 10vh;
   caret-color: #F7F85F; }
 
 .forma {
@@ -8321,8 +8321,6 @@ textarea.form-control-lg {
   scroll-behavior: smooth; }
 
 .wrap-total {
-  display: grid;
-  grid-template-areas: "head" "main" "foot";
   background: #464838;
   background: url(../images/trbientres.png), linear-gradient(340deg, #464838 21%, #87887e 99%);
   height: 100%;

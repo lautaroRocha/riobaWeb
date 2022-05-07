@@ -19,10 +19,6 @@
     
 }
 .wrap-total {   
-    display: grid;
-    grid-template-areas: "head"
-                         "main"
-                         "foot";
    background: rgb(70,72,56);
    background: url(../images/trbientres.png), linear-gradient(340deg, rgba(70,72,56,1) 21%, rgba(135,136,126,1) 99%);
    height: 100%;
