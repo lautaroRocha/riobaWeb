@@ -61,18 +61,18 @@ fieldset {
     text-transform: uppercase;
     padding: .5em;
     font-weight: 600;
-    box-shadow: -1vh 1vh 5px $grisClaro;
+    box-shadow: 0vh 0vh 10px $grisClaro;
     &:hover{
         transition: 0.2s ease-in;
         transform: translateY(5px);
         background-color: map;
-        box-shadow: -1vh 1vh 10px #fff;
+        box-shadow: 0vh 0vh 10px #fff;
         background-color: darken(map-get( $paleta,mosta), 10%);
     }
     &:active {
         background-color: #000;
         color: darken(map-get( $paleta,mosta), 10%);
-        border: 2px solid $mostaza;
+        border: 2px solid $grisClaro;
         box-shadow: 1px 0px 10px $mostaza, -1px 0px 10px $mostaza,
         0px 1px 10px $mostaza,0px -1px 10px $mostaza;
 

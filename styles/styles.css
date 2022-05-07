@@ -391,17 +391,17 @@ fieldset textarea {
   text-transform: uppercase;
   padding: .5em;
   font-weight: 600;
-  box-shadow: -1vh 1vh 5px #ABAD9A; }
+  box-shadow: 0vh 0vh 10px #ABAD9A; }
   .boton:hover {
     transition: 0.2s ease-in;
     transform: translateY(5px);
     background-color: map;
-    box-shadow: -1vh 1vh 10px #fff;
+    box-shadow: 0vh 0vh 10px #fff;
     background-color: #f5f62e; }
   .boton:active {
     background-color: #000;
     color: #f5f62e;
-    border: 2px solid #F7F85F;
+    border: 2px solid #ABAD9A;
     box-shadow: 1px 0px 10px #F7F85F, -1px 0px 10px #F7F85F, 0px 1px 10px #F7F85F, 0px -1px 10px #F7F85F; }
 
 .qs-wrap {
