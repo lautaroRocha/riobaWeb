@@ -38,6 +38,7 @@
     text-align: center;
     grid-area: soy;
     font-size: 2rem;
+    white-space: nowrap;
     display: flex;
     align-items: center;
     padding: 0; }
