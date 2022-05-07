@@ -23,9 +23,6 @@
   .fila-fotos div, .fila-mods div {
     margin: 1rem; }
 
-.grid-grid {
-  display: grid; }
-
 .grid-index {
   display: grid;
   grid-template-columns: repeat 10, 1fr;
@@ -40,8 +37,7 @@
   .grid-index #soyT {
     text-align: center;
     grid-area: soy;
-    font-size: 2rem;
-    margin: auto; }
+    align-self: center; }
   .grid-index #patch {
     color: #FFF;
     text-transform: uppercase;

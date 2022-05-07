@@ -1,6 +1,4 @@
-.grid-grid {
-    display: grid;
-}
+
 .grid-index {
     display: grid;
     grid-template-columns: repeat (10, 1fr);
@@ -26,9 +24,8 @@
     }
     #soyT{
         text-align: center;
-        grid-area:soy;   
-        font-size: 2rem;
-        margin: auto;
+        grid-area:soy;  
+        align-self: center; 
     }
         #patch{
         color: #FFF;
