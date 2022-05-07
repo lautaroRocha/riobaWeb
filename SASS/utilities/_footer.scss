@@ -1,32 +1,31 @@
 .pie {
-    background-color:#000;
+    background: rgb(0,0,0);
     color: map-get($paleta, grisCla);
-    width: 100vw;
-    padding: 1rem;
     bottom: 0;
-    margin-top: 10rem;
-    display: flex;
-    flex-direction: column;
+    @include flex (flex, column, nowrap, space-around, center, 0);
+    width: 100%;
     align-items: center;
     text-align: center;
-    gap:1rem;
+    margin-top: 5rem;
     .iconos  {
         display: flex;
-        justify-items: center;
-        gap:2rem;
-        padding-top: 2rem;
+        justify-content: center;
+        padding: 2rem 0rem 1rem;
+        a{
+            margin: 0 2rem;
+        }
     }
     .legal {
-        display: flex;
-        flex-direction: column;
+        @include flex (flex, column, nowrap, space-around, center, 0);
+        width: 70%;
+        padding-bottom: 2vh;
     }
     a {
         font-weight: 600;
-        margin: 0% 3%;
         color: map-get($paleta, grisCla);
         &:hover{
             color: map-get($paleta, mosta);
-            transition:0.2s ease-out;
+            transition:0.5s ease-out;
         }
     }
 }
@@ -34,7 +33,9 @@
     .pie {
     .iconos {
         width: 100vw;
-        justify-content: space-evenly;}
+        padding: 2rem 0 .5rem;
+        margin:0 4rem;
+    }
     }
 }
 .bi {

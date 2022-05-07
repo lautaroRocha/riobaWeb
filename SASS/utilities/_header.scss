@@ -21,12 +21,11 @@
     }  
     .nav-link{
         text-transform: uppercase;
-        color: #fff !important;
         font-weight: 700;
         font-size: 1.2vw;
         &:hover{
-            color: $mostaza !important;
-            filter: drop-shadow(1px 0px 5px $grisTenue);
+            color: map-get($paleta, mosta);
+            @extend %opt-text;
             transition:0.5s ease-out;
         }
     }
@@ -35,6 +34,8 @@
         margin-right: 7%;
     } 
 }
+$navbar-dark-color:#FFF;
+$navbar-dark-hover-color: map-get($paleta, mosta);
   
 @media (max-width: $pantallaMedia){
     .navbar {

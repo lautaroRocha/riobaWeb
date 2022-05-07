@@ -1,30 +1,68 @@
-.grilla3 {
-    display: flex;
-    place-items: center;
-    width: fit-content;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 3em;
+.fila-mods {
+    @extend %linea-tres;
+}
+@media (max-width: $pantallaChica) {
+    .fila-mods {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        div {
+            margin: 1rem auto;
+        }
+    }
 }
 .mod-dis-wrap {
-    @include flex (flex, column, nowrap, center, center, 2em);
+    @include flex (flex, column, nowrap, center, center, 1.5rem);
     @extend %glassmorphism;
-    max-width: 20rem;
+
     img {
         @extend %imagen;
     }
-}
-.display-7 {
-    font-size: 2rem;    
+    span {
+        color: map-get($paleta, mosta);
+        font-size: clamp (1.5rem 2vw 3rem);
+        white-space: nowrap;
+    }
 }
 @media (max-width: $pantallaMedia){
-    .grilla3 {
-        flex-direction: column;
-        gap: 1.5em;
+    .mod-dis-wrap {
+        max-width: 13rem;
+        span {
+            font-size: 1.5rem;
+        }
     }
+}
+
+@media (max-width: $pantallaChica){
+    .mod-dis-wrap{
+        max-width: 20rem;
+        span{
+            font-size: 2rem;
+        }
+    }
+}
+.display-7 {
+     font-size: 2rem;
+}
+.boton-modelos {
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 2rem;  
+    border: 3px $grisClaro;
+    &:hover {
+       transform: scale(1.1);
+       transition: ease-in-out 0.3s;
+       filter: drop-shadow(-5px 5px 2px #000);
+       transition:0.5s ease-out;
+   }
+}
+$modal-content-bg: $transpaClaro;
+$btn-close-color: $grisClaro;  
+$modal-header-border-color: $mostaza;
+@media (max-width: $pantallaMedia){
     .mod-dis-wrap {
         img {
             height: 60%;
         }
     }
 }
+
