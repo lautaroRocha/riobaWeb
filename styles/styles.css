@@ -37,9 +37,9 @@
   .grid-index #soyT {
     text-align: center;
     grid-area: soy;
-    margin: 0;
-    padding: .5rem;
-    font-size: 2rem; }
+    font-size: 2rem;
+    display: flex;
+    align-items: center; }
   .grid-index #patch {
     color: #FFF;
     text-transform: uppercase;
@@ -164,7 +164,6 @@
 .pie {
   background: black;
   color: #ABAD9A;
-  position: relative;
   bottom: 0;
   display: flex;
   flex-flow: column nowrap;
@@ -175,7 +174,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   text-align: center;
   margin-top: 5rem; }
@@ -8318,7 +8317,7 @@ textarea.form-control-lg {
 .wrap-total {
   background: #464838;
   background: url(../images/trbientres.png), linear-gradient(340deg, #464838 21%, #87887e 99%);
-  height: 100%;
+  height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
   z-index: -1;

@@ -25,9 +25,9 @@
     #soyT{
         text-align: center;
         grid-area:soy;   
-        margin: 0;
-        padding: .5rem;
         font-size: 2rem;
+        display: flex;
+        align-items: center;
     }
         #patch{
         color: #FFF;
