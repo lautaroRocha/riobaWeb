@@ -173,3 +173,8 @@
     }
     }
 }
+@media (max-width: $pantallaChica) {
+    .imag-inde{
+        grid-template-columns: 1fr;
+    }
+}

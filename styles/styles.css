@@ -161,9 +161,15 @@
     .imag-inde .overlay {
       opacity: 1; } }
 
+@media (max-width: 768px) {
+  .imag-inde {
+    grid-template-columns: 1fr; } }
+
 .pie {
+  grid-area: foot;
   background: black;
   color: #ABAD9A;
+  position: relative;
   bottom: 0;
   display: flex;
   flex-flow: column nowrap;
@@ -175,6 +181,8 @@
   margin-right: auto;
   padding: 0;
   width: 100%;
+  height: 100%;
+  max-width: 2500px;
   align-items: center;
   text-align: center;
   margin-top: 5rem; }
@@ -217,11 +225,12 @@
     transition: 0.2s ease-out; }
 
 .navbar {
+  grid-area: head;
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: -4px 4px 10px black;
   border-bottom: 1px solid #464838;
   width: 100vw;
-  max-width: 1500px;
+  max-width: 2500px;
   margin: 0 auto; }
   .navbar .logo {
     width: 15rem;
@@ -332,7 +341,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0rem 3rem;
-  margin: 3rem auto 0rem;
+  margin: 3rem auto 10vh;
   caret-color: #F7F85F; }
 
 .forma {
@@ -384,17 +393,17 @@ fieldset textarea {
   text-transform: uppercase;
   padding: .5em;
   font-weight: 600;
-  box-shadow: -1vh 1vh 5px #ABAD9A; }
+  box-shadow: 0vh 0vh 10px #ABAD9A; }
   .boton:hover {
     transition: 0.2s ease-in;
     transform: translateY(5px);
     background-color: map;
-    box-shadow: -1vh 1vh 10px #fff;
+    box-shadow: 0vh 0vh 10px #fff;
     background-color: #f5f62e; }
   .boton:active {
     background-color: #000;
     color: #f5f62e;
-    border: 2px solid #F7F85F;
+    border: 2px solid #ABAD9A;
     box-shadow: 1px 0px 10px #F7F85F, -1px 0px 10px #F7F85F, 0px 1px 10px #F7F85F, 0px -1px 10px #F7F85F; }
 
 .qs-wrap {
@@ -444,6 +453,9 @@ fieldset textarea {
 @media (max-width: 768px) {
   .qs-wrap {
     max-width: 400px; } }
+
+.fila-mods {
+  padding-bottom: 30vh; }
 
 @media (max-width: 768px) {
   .fila-mods {
@@ -8317,12 +8329,15 @@ textarea.form-control-lg {
 .wrap-total {
   background: #464838;
   background: url(../images/trbientres.png), linear-gradient(340deg, #464838 21%, #87887e 99%);
-  height: 100vh;
+  height: 100%;
   max-width: 100%;
   overflow-x: hidden;
   z-index: -1;
   font-family: 'Red Hat Mono', monospace;
   color: #FEFEFE; }
+
+main {
+  grid-area: main; }
 
 .wrap {
   display: flex;
@@ -8358,7 +8373,8 @@ textarea.form-control-lg {
 
 .titulo {
   padding: 1rem;
-  max-width: 700px; }
+  max-width: 700px;
+  font-size: 1rem; }
   .titulo a {
     text-decoration: none;
     color: #F7F85F; }
