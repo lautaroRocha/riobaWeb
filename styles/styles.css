@@ -8371,7 +8371,8 @@ main {
 
 .titulo {
   padding: 1rem;
-  max-width: 700px; }
+  max-width: 700px;
+  font-size: 1rem; }
   .titulo a {
     text-decoration: none;
     color: #F7F85F; }
