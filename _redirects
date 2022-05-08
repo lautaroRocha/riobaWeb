@@ -1,1 +1,2 @@
-ErrorDocument 404 /404.html
+from :"ErrorDocument 404"
+to : "404.html"
