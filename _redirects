@@ -1,2 +1,0 @@
-from :"ErrorDocument 404"
-to : "404.html"
